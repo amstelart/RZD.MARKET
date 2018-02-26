@@ -5,4 +5,8 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    @include container;
+  }
 }

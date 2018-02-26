@@ -66,6 +66,7 @@
     "./src/scss/functions.scss",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
+    "../../node_modules/font-awesome/scss/font-awesome.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "../../node_modules/nouislider/distribute/nouislider.css"
   ],
