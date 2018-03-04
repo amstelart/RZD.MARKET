@@ -40,8 +40,9 @@ html(class='no-js  page', lang='ru')
       .page__content
         block header
           p «шапка»
-        block content
-          p содержимое страницы
+        main.page__main-content(role="main")
+          block content
+            p содержимое страницы
       .page__footer-wrapper
         block footer
           p «подвал»

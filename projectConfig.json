@@ -60,7 +60,20 @@
     "tabs": [],
     "object-fit-polyfill": [],
     "or": [],
-    "baron": []
+    "baron": [],
+    "main-section": [],
+    "main-feedback": [],
+    "subscription": [],
+    "reviews": [],
+    "product-card": [],
+    "store-card": [],
+    "main-shops-list": [],
+    "sidebar-section": [],
+    "sedebar-card": [],
+    "latest-news": [],
+    "catalog-list": [],
+    "main-catalog-wrap": [],
+    "sidebar-card": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

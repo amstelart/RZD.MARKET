@@ -1,0 +1,11 @@
+// В этом файле должны быть стили для БЭМ-блока main-catalog-wrap, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-catalog-wrap {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}

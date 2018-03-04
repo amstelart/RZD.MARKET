@@ -1,0 +1,19 @@
+// В этом файле должны быть стили для БЭМ-блока subscription, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.subscription {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: $blue-gradient;
+  border-radius: $border-radius;
+  border: 1px solid #a0a0a0;
+  min-height: 300px;
+  color: #fff;
+  padding: 15px 20px 40px 20px;
+
+  &__title {
+    font-size: 18px;
+  }
+}

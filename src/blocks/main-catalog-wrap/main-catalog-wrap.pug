@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (main-catalog-wrap)
+
+mixin main-catalog-wrap(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +main-catalog-wrap('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' main-catalog-wrap--' + modsList[i].trim();
+      }
+    }
+
+  .main-catalog-wrap(class=allMods)&attributes(attributes)
+    .main-catalog-wrap__inner!= text

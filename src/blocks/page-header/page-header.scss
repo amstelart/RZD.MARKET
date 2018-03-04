@@ -9,4 +9,14 @@
   &__inner {
     @include container;
   }
+
+  &__box {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  &__right {
+    display: flex;
+  }
 }

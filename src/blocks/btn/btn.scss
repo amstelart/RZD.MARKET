@@ -31,9 +31,10 @@ $border-radius:               rem(3px) !default;
   text-transform: none;
   color: $text-color;
   border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
-  background-image: none;
+  border: 1px solid $border-color;
+  background: $gray-gradient;
+  // background-color: $gray-lightest;
+  // background-image: none;
   cursor: pointer;
 
   &:hover,

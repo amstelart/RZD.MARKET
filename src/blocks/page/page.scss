@@ -29,6 +29,14 @@
     flex-grow: 1;
   }
 
+  &__main-content {
+    @include container;
+  }
+
+  &__main-banner {
+    margin-bottom: 20px;
+  }
+
   &__footer-wrapper {
     flex-shrink: 0;
   }

@@ -23,3 +23,10 @@ mixin page-header(mods)
         img(src="img/top-banner.jpg")
       .page-header__box
         block
+        .page-header__right
+          form.search-form.page-header__search
+            input.search-form__input(type='search', placeholder='Type object id to search...')
+            button.search-form__btn Search
+          .login
+            a.login__sign-in(href) Вход
+            a.login__reg(href) Регистрация

@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока sidebar-section, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sidebar-section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+  margin-bottom: 30px;
+
+  &__main-col {
+    @include col();
+    @include col(lg, 9);
+  }
+
+  &__sidebar-col {
+    @include col();
+    @include col(lg, 3);
+  }
+}

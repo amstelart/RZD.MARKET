@@ -5,7 +5,7 @@ $gray:                        hsl(0, 0%, 50%) !default;
 $gray-lighter:                hsl(0, 0%, 80%) !default;
 $gray-lightest:               hsl(0, 0%, 90%) !default;
 
-$font-size--root:             16px !default;
+$font-size--root:             14px !default;
 
 $font-size:                   1rem !default; // rem(16px)
 
@@ -86,7 +86,7 @@ h6 {
 h1,
 h2,
 h3 {
-  margin-top: 3rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -96,7 +96,7 @@ h3 {
 h4,
 h5,
 h6 {
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 

@@ -19,4 +19,10 @@ mixin page-footer(mods)
 
   footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)
     .page-footer__inner
-      block
+      .page-footer__box
+        block
+        .page-footer__right
+          a.btn(href="") Добавить объявление
+          a.btn(href="") Добавить магазин
+      .page-footer__copyright
+        p Разработка сайта - <a href="http://www.2showbiz.ru">Showbiz Studio</a>

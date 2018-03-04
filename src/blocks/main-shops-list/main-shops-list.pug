@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (main-shops-list)
+
+mixin main-shops-list(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +main-shops-list('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' main-shops-list--' + modsList[i].trim();
+      }
+    }
+
+  .main-shops-list(class=allMods)&attributes(attributes)
+    .main-shops-list__inner!= text

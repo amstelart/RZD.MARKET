@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (catalog-list)
+
+mixin catalog-list(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +catalog-list('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' catalog-list--' + modsList[i].trim();
+      }
+    }
+
+  .catalog-list(class=allMods)&attributes(attributes)
+    .catalog-list__inner!= text
