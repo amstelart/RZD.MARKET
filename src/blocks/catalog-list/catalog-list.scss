@@ -14,7 +14,8 @@
 
   > li {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
+
     span {
       color: #7d7a7a;
       font-weight: 400;
@@ -29,6 +30,7 @@
 
   > li > ul > li {
     margin: 5px 0;
+    
     a {
       color: #7d7a7a;
       display: inline-block;
