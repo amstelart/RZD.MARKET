@@ -10,6 +10,10 @@
     @include container;
   }
 
+  &__banner {
+    margin-top: 10px;
+  }
+
   &__box {
     display: flex;
     padding-top: 35px;

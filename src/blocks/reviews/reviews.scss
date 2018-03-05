@@ -25,4 +25,43 @@
     color: $color-main;
     border-bottom: 3px solid $color-main;
   }
+
+  &__body {
+    padding: 20px 20px 0 20px;
+  }
+
+  &__carousel {
+
+    .owl-nav {
+
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: 50%;
+        transform: translateY(-50%);
+
+        svg {
+          stroke: #000;
+        }
+      }
+
+      .owl-prev {
+        left: -30px;
+      }
+      .owl-next {
+        right: -30px;
+      }
+    }
+  }
+
+  &__item-title {
+    text-transform: uppercase;
+    font-style: 700;
+  }
+
+  &__item-caption {
+    font-size: 12px;
+  }
 }
