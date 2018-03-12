@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Главная</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if (isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if (typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--' + key;
+            if (typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if (isMobile[key][type]) rootClasses += ' is-mobile--' + key + '-' + type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      } else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <div class="page-header__banner"><a href="#"><img src="img/top-banner.jpg"/></a></div>
+          <div class="page-header__box"><a class="logo" href="/"><img src="img/logo.svg"></a>
+            <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
+                <li class="main-nav__item  main-nav__item--active  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
+                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
+                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
+                          <ul class="main-nav__list  main-nav__list--lvl-3">
+                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
+                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+              </ul>
+            </nav>
+            <div class="page-header__right">
+              <form class="search-form page-header__search"><input class="search-form__input" type="search" placeholder="Type object id to search..." /><button class="search-form__btn">Search</button></form>
+              <div class="login"><a class="login__sign-in" href="href">Вход</a><a class="login__reg" href="href">Регистрация</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page__main-content" role="main">
+
+        <section class="sidebar-section sidebar-section--right">
+          <div class="sidebar-section__main-col">
+            <div class="main-catalog-wrap">
+              <div class="tabs tabs--catalog">
+                <ul class="tabs__links" role="tablist">
+                  <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation"><a class="tabs__link" href="#tab00" data-toggle="tab" role="tab">Товары</a></li>
+                  <li class="tabs__link-wrap" role="presentation"><a class="tabs__link" href="#tab01" data-toggle="tab" role="tab">Услуги</a></li>
+                  <div class="btn-group"><a class="btn" href="#">Добавить объявление</a><a class="btn" href="#">Добавить магазин</a></div>
+                </ul>
+                <div class="tabs__content-wrapper">
+                  <div class="tabs__content-item tabs__content-item--active" id="tab00" role="tabpanel">
+                    <ul class="catalog-list">
+                      <li>Вагонная сдужба<span>1535</span>
+                        <ul>
+                          <li><a href="">Запасные части</a></li>
+                          <li><a href="">Подвидной состав</a></li>
+                        </ul>
+                      </li>
+                      <li>Локомотивная служба<span>759</span>
+                        <ul>
+                          <li><a href="">Запасные части</a></li>
+                          <li><a href="">Подвидной состав</a></li>
+                        </ul>
+                      </li>
+                      <li>Локомотивная служба<span>4135</span>
+                        <ul>
+                          <li><a href="">Рельсы</a></li>
+                          <li><a href="">Шпалы</a></li>
+                          <li><a href="">Промежуточные рельсовые скрепления</a></li>
+                          <li><a href="">Щебеночный баласт</a></li>
+                          <li><a href="">Промежуточные рельсовые скрепления</a></li>
+                        </ul>
+                      </li>
+                      <li>Сигнал и связь<span>1535</span>
+                        <ul>
+                          <li><a href="">Централизация стрелочных переводов</a></li>
+                          <li><a href="">Железнодорожные светофоры</a></li>
+                          <li><a href="">Рельсовые цепи</a></li>
+                          <li><a href="">Кабельные сети</a></li>
+                          <li><a href="">Автоматическая передняя сигнализация</a></li>
+                          <li><a href="">Стационарные системы электрической сигнализации и контроля</a></li>
+                        </ul>
+                      </li>
+                      <li>Пассаж
+                        <ul>
+                          <li><a href="">Подвижной состав</a></li>
+                          <li><a href="">Запасные части</a></li>
+                          <li><a href="">Подвижной состав</a></li>
+                          <li><a href="">Запасные части</a></li>
+                        </ul>
+                      </li>
+                      <li>Электроснаб
+                        <ul>
+                          <li><a href="">Контактная сеть</a></li>
+                          <li><a href="">Линии электропередачи</a></li>
+                          <li><a href="">Релейные защиты</a></li>
+                          <li><a href="">Устройства автоматики и телемеханики</a></li>
+                          <li><a href="">Средства технического диагностирования</a></li>
+                          <li><a href="">Оборудование тяговых и трансформаторных подстанций</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tabs__content-item" id="tab01" role="tabpanel">
+                    <p>За словесными горами в стране, гласных и согласных живут рыбные тексты.1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-section__sidebar-col">
+            <div class="sidebar-card">
+              <div class="sidebar-card__header">
+                <div class="sidebar-card__title">Новые объявления</div>
+              </div>
+              <div class="sidebar-card__body">
+                <div class="latest-news">
+                  <div class="latest-news__item">
+                    <h5 class="latest-news__title"><a href="#">Суфле междувагонных соединений</a></h5>
+                    <div class="latest-news__date"><span>12.02.18</span><span>18:03</span></div>
+                  </div>
+                  <div class="latest-news__item">
+                    <h5 class="latest-news__title"><a href="#">Колесная пара</a></h5>
+                    <div class="latest-news__date"><span>12.02.18</span><span>18:03</span></div>
+                  </div>
+                  <div class="latest-news__item">
+                    <h5 class="latest-news__title"><a href="#">Подвеска трангеля</a></h5>
+                    <div class="latest-news__date"><span>12.02.18</span><span>18:03</span></div>
+                  </div>
+                  <div class="latest-news__item">
+                    <h5 class="latest-news__title"><a href="#">Суфле междувагонных соединений</a></h5>
+                    <div class="latest-news__date"><span>12.02.18</span><span>18:03</span></div>
+                  </div>
+                  <div class="latest-news__item">
+                    <h5 class="latest-news__title"><a href="#">Колесная пара</a></h5>
+                    <div class="latest-news__date"><span>12.02.18</span><span>18:03</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-section">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Срочная продажа</h2>
+          </div>
+          <div class="main-section__body">
+            <div class="product-carousel owl-carousel">
+              <div class="product-card">
+                <a class="product-card__link" href="#">
+                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                    <ul class="product-card__description">
+                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                      <li><strong>Вес:</strong> 2х55кг</li>
+                      <li><strong>Страна-производитель:</strong> Россия</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="product-card">
+                <a class="product-card__link" href="#">
+                  <div class="product-card__image"></div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                    <ul class="product-card__description">
+                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                      <li><strong>Вес:</strong> 2х55кг</li>
+                      <li><strong>Страна-производитель:</strong> Россия</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-section">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Услуги</h2>
+          </div>
+          <div class="main-section__body">
+            <div class="product-carousel owl-carousel">
+              <div class="product-card">
+                <a class="product-card__link" href="#">
+                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                  <div class="product-card__body">
+                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                    <ul class="product-card__description">
+                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                      <li><strong>Вес:</strong> 2х55кг</li>
+                      <li><strong>Страна-производитель:</strong> Россия</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__main-banner"><a href="#"><img src="img/top-banner.jpg"></a></section>
+
+        <section class="main-section main-section--bordered">
+          <div class="main-section__header">
+            <h2 class="main-section__title">Магазины</h2>
+          </div>
+          <div class="main-section__body">
+            <div class="main-shops-list">
+              <div class="main-shops-list__card">
+                <h3>Локо сбыт</h3>
+                <p>302040, г. Москва, ул. Лескова, 19</p>
+                <p>+7-900-111-11-11</p>
+                <p>lokosbyt@yandex.ru</p>
+                <p>Всего объявлений: 31</p>
+              </div>
+              <div class="main-shops-list__card">
+                <h3>Локо сбыт</h3>
+                <p>302040, г. Москва, ул. Лескова, 19</p>
+                <p>+7-900-111-11-11</p>
+                <p>lokosbyt@yandex.ru</p>
+                <p>Всего объявлений: 31</p>
+              </div>
+              <div class="main-shops-list__card">
+                <h3>Локо сбыт</h3>
+                <p>302040, г. Москва, ул. Лескова, 19</p>
+                <p>+7-900-111-11-11</p>
+                <p>lokosbyt@yandex.ru</p>
+                <p>Всего объявлений: 31</p>
+              </div>
+              <div class="main-shops-list__card">
+                <h3>Локо сбыт</h3>
+                <p>302040, г. Москва, ул. Лескова, 19</p>
+                <p>+7-900-111-11-11</p>
+                <p>lokosbyt@yandex.ru</p>
+                <p>Всего объявлений: 31</p>
+              </div>
+              <div class="main-shops-list__card">
+                <h3>Локо сбыт</h3>
+                <p>302040, г. Москва, ул. Лескова, 19</p>
+                <p>+7-900-111-11-11</p>
+                <p>lokosbyt@yandex.ru</p>
+                <p>Всего объявлений: 31</p>
+              </div>
+              <div class="main-shops-list__card">
+                <h3>Локо сбыт</h3>
+                <p>302040, г. Москва, ул. Лескова, 19</p>
+                <p>+7-900-111-11-11</p>
+                <p>lokosbyt@yandex.ru</p>
+                <p>Всего объявлений: 31</p>
+              </div>
+              <div class="main-shops-list__card">
+                <h3>Локо сбыт</h3>
+                <p>302040, г. Москва, ул. Лескова, 19</p>
+                <p>+7-900-111-11-11</p>
+                <p>lokosbyt@yandex.ru</p>
+                <p>Всего объявлений: 31</p>
+              </div>
+              <div class="main-shops-list__card">
+                <h3>Локо сбыт</h3>
+                <p>302040, г. Москва, ул. Лескова, 19</p>
+                <p>+7-900-111-11-11</p>
+                <p>lokosbyt@yandex.ru</p>
+                <p>Всего объявлений: 31</p>
+              </div>
+            </div><button class="btn">Показать еще</button></div>
+        </section>
+
+        <section class="main-feedback">
+          <div class="main-feedback__col">
+            <div class="subscription">
+              <div class="subscription__header">
+                <h3 class="subscription__title">Получайте уведомления по интересующим объявлениям</h3>
+              </div>
+              <div class="subscription__body">
+                <form class="form form--subscription">
+                  <div class="form__part">
+                    <div class="field-select"><select class="field-select__select" id="select" name="select"><option value="">Локомотивная служба</option><option value="">Опция2</option></select></div>
+                  </div>
+                  <div class="form__part">
+                    <div class="field-select"><select class="field-select__select" id="select" name="select"><option value="">Выберите категорию</option><option value="">Опция2</option></select></div>
+                    <div class="field-link"><a href="#">Добавить еще категорию</a></div>
+                  </div>
+                  <div class="form__part"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="email" placeholder="Email" name="comment"></span></label>
+                    <div class="field-btn"><button class="btn">Подписаться</button></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="main-feedback__col">
+            <div class="reviews">
+              <div class="reviews__header">
+                <div class="reviews__title">Отзывы</div>
+              </div>
+              <div class="reviews__body">
+                <div class="owl-carousel reviews__carousel">
+                  <div class="reviews__item">
+                    <h3 class="reviews__item-title">ООО Оптомн - импэкс</h3>
+                    <div class="reviews__item-caption">
+                      <p>За время использования при проведении ремонта подвижного состава поставленных этим предприятием изделий рекламаций и нареканий от служб качества и эксплуатации не поступало.</p>
+                      <p>Все поставки осуществляются в установленные договором сроки. ООО "ОПТОН ИМПЭКС" является надежным партнером, зарекомендовавшим себя только с положительной стороны.</p>
+                    </div>
+                  </div>
+                  <div class="reviews__item">
+                    <h3 class="reviews__item-title">ООО Оптомн - импэкс</h3>
+                    <div class="reviews__item-caption">
+                      <p>За время использования при проведении ремонта подвижного состава поставленных этим предприятием изделий рекламаций и нареканий от служб качества и эксплуатации не поступало.</p>
+                      <p>Все поставки осуществляются в установленные договором сроки. ООО "ОПТОН ИМПЭКС" является надежным партнером, зарекомендовавшим себя только с положительной стороны. Все поставки осуществляются в установленные договором сроки. ООО "ОПТОН ИМПЭКС" является надежным партнером, зарекомендовавшим себя только с положительной стороны.</p>
+                    </div>
+                  </div>
+                  <div class="reviews__item">
+                    <h3 class="reviews__item-title">ООО Оптомн - импэкс</h3>
+                    <div class="reviews__item-caption">
+                      <p>За время использования при проведении ремонта подвижного состава поставленных этим предприятием изделий рекламаций и нареканий от служб качества и эксплуатации не поступало. Все поставки осуществляются в установленные договором сроки. ООО "ОПТОН ИМПЭКС" является надежным партнером, зарекомендовавшим себя только с положительной стороны.</p>
+                      <p>Все поставки осуществляются в установленные договором сроки. ООО "ОПТОН ИМПЭКС" является надежным партнером, зарекомендовавшим себя только с положительной стороны.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__box"><a class="logo" href="/"><img src="img/logo.svg"></a>
+            <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
+                <li class="main-nav__item  main-nav__item--active  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
+                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
+                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
+                          <ul class="main-nav__list  main-nav__list--lvl-3">
+                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
+                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+              </ul>
+            </nav>
+            <div class="page-footer__right"><a class="btn" href="">Добавить объявление</a><a class="btn" href="">Добавить магазин</a></div>
+          </div>
+          <div class="page-footer__copyright">
+            <p>Разработка сайта - <a href="http://www.2showbiz.ru">Showbiz Studio</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
