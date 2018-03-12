@@ -1,0 +1,127 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+    +logo('/')
+      img(src="img/logo.svg")
+    +main-nav('10')
+
+block content
+  div.lk-section
+    .lk-section__sidebar-col
+      .lk-sidebar
+        ul.menu.menu--sidebar
+          li.menu__item
+            a.menu__link(href='/') Мои объявления
+          li.menu__item.menu__item--active
+            a.menu__link(href='/') Сообщения
+          li.menu__item
+            a.menu__link(href='/') Настройки
+
+    .lk-section__main-col
+      .lk-main
+        .lk-main__header.lk-main__header--border
+          ul.menu.menu--lk
+            li.menu__item.menu__item--active
+              a.menu__link(href='/') Активные
+            li.menu__item
+              a.menu__link(href='/') Завершенные
+            li.menu__item
+              a.menu__link(href='/') Блокированные
+            li.menu__item
+              a.menu__link(href='/') Удаленные
+
+        .lk-main__body
+          .lk-card
+            .lk-card__image
+              img.thumb(src='img/joker.jpg', alt='Джокер')
+            .lk-card__body
+              h2.lk-card__title Суфле веждувагонных соединений
+              .lk-card__cost 152 555 <i class="fa fa-rub" aria-hidden="true"></i>
+              .progress.progress--lk-card
+                .progress__bar-wrap
+                  .progress__bar(role='progressbar', style='width: 50%;height: 10px;', aria-valuenow='50')
+                .progress__info Объявление завершится через 2 месяца 3 дня
+              .lk-card__meta
+                span № 152698
+                span 25.01.2018
+                span <i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)
+            .lk-card__controls
+              ul.menu.menu--lk-card
+                li.menu__item.menu__item--active
+                  a.menu__link(href='/') Поднять объявления
+                li.menu__item
+                  a.menu__link(href='/') Редактировать
+                li.menu__item
+                  a.menu__link(href='/') Закрыть
+          .lk-card
+            .lk-card__image
+              img.thumb(src='img/joker.jpg', alt='Джокер')
+            .lk-card__body
+              h2.lk-card__title Суфле веждувагонных соединений
+              .lk-card__cost 152 555 <i class="fa fa-rub" aria-hidden="true"></i>
+              .progress.progress--lk-card
+                .progress__bar-wrap
+                  .progress__bar(role='progressbar', style='width: 50%;height: 10px;', aria-valuenow='50')
+                .progress__info Объявление завершится через 2 месяца 3 дня
+              .lk-card__meta
+                span № 152698
+                span 25.01.2018
+                span <i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)
+            .lk-card__controls
+              ul.menu.menu--lk-card
+                li.menu__item.menu__item--active
+                  a.menu__link(href='/') Поднять объявления
+                li.menu__item
+                  a.menu__link(href='/') Редактировать
+                li.menu__item
+                  a.menu__link(href='/') Закрыть
+          .lk-card
+            .lk-card__image
+              img.thumb(src='img/joker.jpg', alt='Джокер')
+            .lk-card__body
+              h2.lk-card__title Суфле веждувагонных соединений
+              .lk-card__cost 152 555 <i class="fa fa-rub" aria-hidden="true"></i>
+              .progress.progress--lk-card
+                .progress__bar-wrap
+                  .progress__bar(role='progressbar', style='width: 50%;height: 10px;', aria-valuenow='50')
+                .progress__info Объявление завершится через 2 месяца 3 дня
+              .lk-card__meta
+                span № 152698
+                span 25.01.2018
+                span <i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)
+
+            .lk-card__controls
+              ul.menu.menu--lk-card
+                li.menu__item.menu__item--active
+                  a.menu__link(href='/') Поднять объявления
+                li.menu__item
+                  a.menu__link(href='/') Редактировать
+                li.menu__item
+                  a.menu__link(href='/') Закрыть
+
+        .lk-main__footer
+          +pagination()
+            +pagination-item('1', '/1')
+            +pagination-item('...')
+            +pagination-item('4', '/4')
+            +pagination-item('5', '/5', true)
+            +pagination-item('6', '/6')
+            +pagination-item('...')
+            +pagination-item('999', '/999')
+
+block footer
+  +page-footer()
+    +logo('/')
+      img(src='img/logo.svg')
+    +main-nav('10')
+
+//- block page-bottom
+//-   script(src="js/some.js")

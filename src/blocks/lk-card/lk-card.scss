@@ -1,0 +1,83 @@
+// В этом файле должны быть стили для БЭМ-блока lk-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.lk-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 20px 0 15px;
+  border-bottom: 1px solid #e0e0e0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__image {
+    padding-right: 30px;
+    width: 30%;
+
+    .thumb {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  &__body {
+    padding-right: 60px;
+    flex-grow: 1;
+    width: 40%;
+  }
+
+  &__controls {
+    border-left: 1px solid #e0e0e0;
+    width: 20%;
+    padding: 0 20px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+  }
+
+  &__cost {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__meta {
+    color: #7f7b7b;
+    font-size: 12px;
+    margin-bottom: 30px;
+
+    span {
+
+      &:not(:first-child) {
+        margin-left: 1.4rem;
+      }
+    }
+  }
+
+  @media (max-width: ($screen-xl - 1)) {
+
+    &__controls {
+      width: 100%;
+      border-left: none;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+
+    &__body {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    &__image {
+      padding-right: 0;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}

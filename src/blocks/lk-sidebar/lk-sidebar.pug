@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (lk-sidebar)
+
+mixin lk-sidebar(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +lk-sidebar('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' lk-sidebar--' + modsList[i].trim();
+      }
+    }
+
+  .lk-sidebar(class=allMods)&attributes(attributes)
+    .lk-sidebar__inner!= text

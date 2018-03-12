@@ -31,4 +31,26 @@ $transition-time:             0.3s !default;
     display: inline-block;
     padding: 0.5em;
   }
+
+  &--lk-card {
+    border: none;
+    border-radius: 0;
+
+    #{$block-name}__bar-wrap {
+      border: 1px solid  #bfbfbf;
+      padding: 1px;
+      margin-bottom: 10px;
+    }
+
+    #{$block-name}__bar {
+      border: 1px solid  #bfbfbf;
+      background-color: #6dc72e;
+      border-radius: 0;
+    }
+
+    #{$block-name}__info {
+      text-align: left;
+      font-size: 12px;
+    }
+  }
 }
