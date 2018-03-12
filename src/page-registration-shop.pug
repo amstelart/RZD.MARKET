@@ -1,0 +1,69 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+    +logo('/')
+      img(src="img/logo.svg")
+    +main-nav('10')
+
+block content
+  div.login-section
+    .login-section__inner
+      .login-section__header
+        h1.login-section__title Регистрация
+      .login-section__body
+        form.form.form--login
+
+          .field-radio
+            .field-radio__input-wrap
+              label.field-radio__name
+                input.field-radio__input(type='radio', name='radio', checked='checked')
+                span.field-radio__name-text Мигазин
+            .field-radio__input-wrap
+              label.field-radio__name
+                input.field-radio__input(type='radio', name='radio')
+                span.field-radio__name-text Частное лицо
+            .field-radio__input-wrap
+              label.field-radio__name
+                input.field-radio__input(type='radio', name='radio')
+                span.field-radio__name-text Покупатель
+
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text', placeholder='Название магазина', name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text', placeholder='Контактное лицо', name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text', placeholder='Email', name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text', placeholder='Телефон', name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text', placeholder='Пароль', name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text', placeholder='Подтвердить пароль', name='comment')
+          .field-actions
+            button.btn Дальше
+      .login-section__footer
+        p
+          | Нажимая «Зарегистрироваться», вы принимаете условия <a href='#'>пользовательского соглашения</a>
+
+block footer
+  +page-footer()
+    +logo('/')
+      img(src='img/logo.svg')
+    +main-nav('10')
+
+//- block page-bottom
+//-   script(src="js/some.js")

@@ -1,0 +1,42 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+    +logo('/')
+      img(src="img/logo.svg")
+    +main-nav('10')
+
+block content
+  div.login-section
+    .login-section__inner
+      .login-section__header
+        h1.login-section__title Вход в личный кабинет
+      .login-section__body
+        form.form.form--login
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text', placeholder='Телефон / Email', name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text', placeholder='Пароль', name='comment')
+          .field-actions
+            button.btn Войти
+      .login-section__footer
+        a(href='#') Забыли пароль?
+        a(href='#') Регистрация
+
+block footer
+  +page-footer()
+    +logo('/')
+      img(src='img/logo.svg')
+    +main-nav('10')
+
+//- block page-bottom
+//-   script(src="js/some.js")

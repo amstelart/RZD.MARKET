@@ -6,6 +6,8 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  background: #fff;
+
   &__inner {
     @include container;
   }

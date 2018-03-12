@@ -71,4 +71,22 @@ $line-height:                 1.5 !default;
       }
     }
   }
+
+  &--login {
+
+    .btn {
+      width: 100%;
+    }
+
+    .field-radio {
+      display: flex;
+      align-items: center;
+
+      .field-radio__input-wrap + .field-radio__input-wrap {
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+  }
+
 }

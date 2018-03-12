@@ -73,7 +73,8 @@
     "latest-news": [],
     "catalog-list": [],
     "main-catalog-wrap": [],
-    "sidebar-card": []
+    "sidebar-card": [],
+    "login-section": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
