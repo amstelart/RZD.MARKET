@@ -78,7 +78,8 @@
     "lk-section": [],
     "lk-sidebar": [],
     "lk-main": [],
-    "lk-card": []
+    "lk-card": [],
+    "lk-settings": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

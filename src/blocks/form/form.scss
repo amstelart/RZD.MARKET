@@ -89,4 +89,31 @@ $line-height:                 1.5 !default;
     }
   }
 
+  &--settings {
+
+    .field-text {
+      display: flex;
+      align-items: center;
+
+      &__name {
+        flex-shrink: 0;
+        min-width: 165px;
+        font-weight: 400;
+        color: #7f7b7b;
+      }
+
+      &__input-wrap {
+        min-width: 360px;
+      }
+    }
+
+    .field-checkbox {
+      margin-left: 165px;
+    }
+
+    .field-actions {
+      margin-left: 165px;
+      margin-bottom: 0;
+    }
+  }
 }
