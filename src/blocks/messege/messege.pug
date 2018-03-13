@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (messege)
+
+mixin messege(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +messege('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' messege--' + modsList[i].trim();
+      }
+    }
+
+  .messege(class=allMods)&attributes(attributes)
+    .messege__inner!= text

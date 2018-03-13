@@ -79,7 +79,9 @@
     "lk-sidebar": [],
     "lk-main": [],
     "lk-card": [],
-    "lk-settings": []
+    "lk-settings": [],
+    "messege": [],
+    "lk-messeges": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

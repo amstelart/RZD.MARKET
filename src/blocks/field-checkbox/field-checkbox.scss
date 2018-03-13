@@ -120,4 +120,11 @@ $border-radius:               rem(3px) !default;
   &__help-text {
     @include field-help-text;
   }
+
+  &--messege {
+
+    #{$block-name}__name {
+      display: block;
+    }
+  }
 }

@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока messege, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.messege {
+
+  $block-name:                &; // #{$block-name}__element
+
+  min-width: 100%;
+
+  &__autor {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: #7f7b7b;
+    line-height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__theme {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #7f7b7b;
+    line-height: 24px;
+  }
+}
