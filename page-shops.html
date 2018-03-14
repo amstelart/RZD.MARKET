@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Главная</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if (isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if (typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--' + key;
+            if (typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if (isMobile[key][type]) rootClasses += ' is-mobile--' + key + '-' + type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      } else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <div class="page-header__banner"><a href="#"><img src="img/top-banner.jpg"/></a></div>
+          <div class="page-header__box"><a class="logo" href="/"><img src="img/logo.svg"></a>
+            <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
+                <li class="main-nav__item  main-nav__item--active  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
+                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
+                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
+                          <ul class="main-nav__list  main-nav__list--lvl-3">
+                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
+                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+              </ul>
+            </nav>
+            <div class="page-header__right">
+              <form class="search-form page-header__search"><input class="search-form__input" type="search" placeholder="Type object id to search..." /><button class="search-form__btn">Search</button></form>
+              <div class="login"><a class="login__sign-in" href="href">Вход</a><a class="login__reg" href="href">Регистрация</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page__main-content" role="main">
+        <div class="shops">
+          <div class="shops__list">
+            <div class="shops__item">
+              <div class="shop-card">
+                <div class="shop-card__image"><img class="thumb" src="img/joker.jpg" alt="Джокер"></div>
+                <div class="shop-card__body">
+                  <div class="shop-card__header">
+                    <div class="shop-card__header-inner">
+                      <div class="shop-card__title">Локо сбыт</div>
+                      <div class="shop-card__actions"><button class="btn active"><i class="fa fa-heart" aria-hidden="true"></i></button><button class="btn"><i class="fa fa-share" aria-hidden="true"></i></button></div>
+                      <div class="shop-card__meta"><span>№ 152698</span><span>25.01.2018</span><span><i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)</span></div>
+                    </div><button class="btn">Задать вопрос</button></div>
+                  <div class="shop-card__content">
+                    <div class="shop-card__contacts">
+                      <h4>Контактные данные</h4>
+                      <p>Режим работы: пн-пт. с 9:00 до 18:00<br>Адрес: г. Москва, ул. Мирная, 12<br>Телефон: +7 (911) -11-11</p><a href="#">Схема проезда</a></div>
+                    <div class="shop-card__info">
+                      <h4>Комментарии продавца</h4>
+                      <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shops__item">
+              <div class="shop-card">
+                <div class="shop-card__image"><img class="thumb" src="img/joker.jpg" alt="Джокер"></div>
+                <div class="shop-card__body">
+                  <div class="shop-card__header">
+                    <div class="shop-card__header-inner">
+                      <div class="shop-card__title">Локо сбыт</div>
+                      <div class="shop-card__actions"><button class="btn active"><i class="fa fa-heart" aria-hidden="true"></i></button><button class="btn"><i class="fa fa-share" aria-hidden="true"></i></button></div>
+                      <div class="shop-card__meta"><span>№ 152698</span><span>25.01.2018</span><span><i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)</span></div>
+                    </div><button class="btn">Задать вопрос</button></div>
+                  <div class="shop-card__content">
+                    <div class="shop-card__contacts">
+                      <h4>Контактные данные</h4>
+                      <p>Режим работы: пн-пт. с 9:00 до 18:00<br>Адрес: г. Москва, ул. Мирная, 12<br>Телефон: +7 (911) -11-11</p><a href="#">Схема проезда</a></div>
+                    <div class="shop-card__info">
+                      <h4>Комментарии продавца</h4>
+                      <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shops__item">
+              <div class="shop-card">
+                <div class="shop-card__image"><img class="thumb" src="img/joker.jpg" alt="Джокер"></div>
+                <div class="shop-card__body">
+                  <div class="shop-card__header">
+                    <div class="shop-card__header-inner">
+                      <div class="shop-card__title">Локо сбыт</div>
+                      <div class="shop-card__actions"><button class="btn active"><i class="fa fa-heart" aria-hidden="true"></i></button><button class="btn"><i class="fa fa-share" aria-hidden="true"></i></button></div>
+                      <div class="shop-card__meta"><span>№ 152698</span><span>25.01.2018</span><span><i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)</span></div>
+                    </div><button class="btn">Задать вопрос</button></div>
+                  <div class="shop-card__content">
+                    <div class="shop-card__contacts">
+                      <h4>Контактные данные</h4>
+                      <p>Режим работы: пн-пт. с 9:00 до 18:00<br>Адрес: г. Москва, ул. Мирная, 12<br>Телефон: +7 (911) -11-11</p><a href="#">Схема проезда</a></div>
+                    <div class="shop-card__info">
+                      <h4>Комментарии продавца</h4>
+                      <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shops__item">
+              <div class="shop-card">
+                <div class="shop-card__image"><img class="thumb" src="img/joker.jpg" alt="Джокер"></div>
+                <div class="shop-card__body">
+                  <div class="shop-card__header">
+                    <div class="shop-card__header-inner">
+                      <div class="shop-card__title">Локо сбыт</div>
+                      <div class="shop-card__actions"><button class="btn active"><i class="fa fa-heart" aria-hidden="true"></i></button><button class="btn"><i class="fa fa-share" aria-hidden="true"></i></button></div>
+                      <div class="shop-card__meta"><span>№ 152698</span><span>25.01.2018</span><span><i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)</span></div>
+                    </div><button class="btn">Задать вопрос</button></div>
+                  <div class="shop-card__content">
+                    <div class="shop-card__contacts">
+                      <h4>Контактные данные</h4>
+                      <p>Режим работы: пн-пт. с 9:00 до 18:00<br>Адрес: г. Москва, ул. Мирная, 12<br>Телефон: +7 (911) -11-11</p><a href="#">Схема проезда</a></div>
+                    <div class="shop-card__info">
+                      <h4>Комментарии продавца</h4>
+                      <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shops__item">
+              <div class="shop-card">
+                <div class="shop-card__image"><img class="thumb" src="img/joker.jpg" alt="Джокер"></div>
+                <div class="shop-card__body">
+                  <div class="shop-card__header">
+                    <div class="shop-card__header-inner">
+                      <div class="shop-card__title">Локо сбыт</div>
+                      <div class="shop-card__actions"><button class="btn active"><i class="fa fa-heart" aria-hidden="true"></i></button><button class="btn"><i class="fa fa-share" aria-hidden="true"></i></button></div>
+                      <div class="shop-card__meta"><span>№ 152698</span><span>25.01.2018</span><span><i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)</span></div>
+                    </div><button class="btn">Задать вопрос</button></div>
+                  <div class="shop-card__content">
+                    <div class="shop-card__contacts">
+                      <h4>Контактные данные</h4>
+                      <p>Режим работы: пн-пт. с 9:00 до 18:00<br>Адрес: г. Москва, ул. Мирная, 12<br>Телефон: +7 (911) -11-11</p><a href="#">Схема проезда</a></div>
+                    <div class="shop-card__info">
+                      <h4>Комментарии продавца</h4>
+                      <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shops__item">
+              <div class="shop-card">
+                <div class="shop-card__image"><img class="thumb" src="img/joker.jpg" alt="Джокер"></div>
+                <div class="shop-card__body">
+                  <div class="shop-card__header">
+                    <div class="shop-card__header-inner">
+                      <div class="shop-card__title">Локо сбыт</div>
+                      <div class="shop-card__actions"><button class="btn active"><i class="fa fa-heart" aria-hidden="true"></i></button><button class="btn"><i class="fa fa-share" aria-hidden="true"></i></button></div>
+                      <div class="shop-card__meta"><span>№ 152698</span><span>25.01.2018</span><span><i class="fa fa-eye" aria-hidden="true"></i> 150 (9 сегодня)</span></div>
+                    </div><button class="btn">Задать вопрос</button></div>
+                  <div class="shop-card__content">
+                    <div class="shop-card__contacts">
+                      <h4>Контактные данные</h4>
+                      <p>Режим работы: пн-пт. с 9:00 до 18:00<br>Адрес: г. Москва, ул. Мирная, 12<br>Телефон: +7 (911) -11-11</p><a href="#">Схема проезда</a></div>
+                    <div class="shop-card__info">
+                      <h4>Комментарии продавца</h4>
+                      <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shops__pagination">
+            <div class="pagination" aria-label="Page navigation"><a class="pagination__item" href="/1">1</a><span class="pagination__item">...</span><a class="pagination__item" href="/4">4</a><a class="pagination__item  pagination--active" href="/5">5</a><a class="pagination__item" href="/6">6</a><span class="pagination__item">...</span><a class="pagination__item" href="/999">999</a></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__box"><a class="logo" href="/"><img src="img/logo.svg"></a>
+            <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
+                <li class="main-nav__item  main-nav__item--active  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
+                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
+                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
+                          <ul class="main-nav__list  main-nav__list--lvl-3">
+                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
+                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+              </ul>
+            </nav>
+            <div class="page-footer__right"><a class="btn" href="">Добавить объявление</a><a class="btn" href="">Добавить магазин</a></div>
+          </div>
+          <div class="page-footer__copyright">
+            <p>Разработка сайта - <a href="http://www.2showbiz.ru">Showbiz Studio</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
