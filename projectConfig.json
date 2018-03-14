@@ -86,7 +86,8 @@
     "show-control": [],
     "sort-control": [],
     "search-box": [],
-    "shop-card": []
+    "shop-card": [],
+    "shops": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
