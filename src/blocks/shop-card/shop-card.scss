@@ -1,0 +1,118 @@
+// В этом файле должны быть стили для БЭМ-блока shop-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.shop-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  background: #fff;
+  padding: 20px 20px;
+  border: 1px solid #a2a2a2;
+  border-radius: 0.35714rem;
+
+  &__image {
+    max-width: 340px;
+    flex-shrink: 0;
+    margin-right: 30px;
+
+    .thumb {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  &__body {
+    flex-grow: 1;
+  }
+
+  &__header {
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__header-inner {
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__actions {
+
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle;
+
+    .btn {
+      padding: 0;
+      color: #7f7b7b;
+      background: #fff;
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+
+      &:not(:first-child) {
+        margin-left: 5px;
+      }
+
+      &.active {
+        color: #ff0000;
+      }
+    }
+  }
+
+  &__meta {
+    color: #7f7b7b;
+    font-size: 12px;
+    display: inline-block;
+
+    span {
+      vertical-align: middle;
+
+      &:not(:first-child) {
+        margin-left: 1.4rem;
+      }
+    }
+  }
+
+  &__content {
+
+    @include row;
+
+    p {
+      font-size: 14px;
+      color: #7f7b7b;
+      line-height: 20px;
+      margin-bottom: 0.6em;
+    }
+
+    a {
+      color: #7f7b7b;
+      font-size: 12px;
+
+      &:hover,
+      &:focus {
+        color: #000;
+      }
+    }
+  }
+
+  &__contacts {
+    @include col();
+    @include col(lg, 5);
+  }
+
+  &__info {
+    @include col();
+    @include col(lg, 7);
+  }
+}

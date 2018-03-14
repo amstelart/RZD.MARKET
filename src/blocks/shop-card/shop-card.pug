@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (shop-card)
+
+mixin shop-card(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +shop-card('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' shop-card--' + modsList[i].trim();
+      }
+    }
+
+  .shop-card(class=allMods)&attributes(attributes)
+    .shop-card__inner!= text

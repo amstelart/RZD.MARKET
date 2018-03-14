@@ -1,0 +1,28 @@
+// В этом файле должны быть стили для БЭМ-блока search-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.search-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  background: #fff;
+  padding: 20px 10px;
+  border: 1px solid #a2a2a2;
+  border-radius: 0.35714rem;
+
+  &__col {
+    @include col();
+    @include col(lg, 6);
+  }
+
+  &__wrap {
+
+    .xz-block {
+      background: #f3f1f1;
+      min-height: 220px;
+      border-radius: 0.35714rem;
+    }
+  }
+}

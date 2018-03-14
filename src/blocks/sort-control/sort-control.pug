@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (sort-control)
+
+mixin sort-control(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +sort-control('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' sort-control--' + modsList[i].trim();
+      }
+    }
+
+  .sort-control(class=allMods)&attributes(attributes)
+    .sort-control__inner!= text

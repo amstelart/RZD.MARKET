@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока show-control, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.show-control {
+
+  $block-name:                &; // #{$block-name}__element
+
+  font-size: 14px;
+  line-height: 24px;
+
+  &__text {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  &__options {
+    display: inline-block;
+  }
+  &__item {
+    padding: 5px;
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}

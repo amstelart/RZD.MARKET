@@ -81,7 +81,12 @@
     "lk-card": [],
     "lk-settings": [],
     "messege": [],
-    "lk-messeges": []
+    "lk-messeges": [],
+    "catalog": [],
+    "show-control": [],
+    "sort-control": [],
+    "search-box": [],
+    "shop-card": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

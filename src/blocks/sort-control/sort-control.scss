@@ -1,0 +1,10 @@
+// В этом файле должны быть стили для БЭМ-блока sort-control, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sort-control {
+
+  $block-name:                &; // #{$block-name}__element
+
+  min-width: 200px;
+}
