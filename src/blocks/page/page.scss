@@ -31,6 +31,8 @@
 
   &__main-content {
     @include container;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   &__main-banner {
@@ -39,6 +41,10 @@
 
   &__footer-wrapper {
     flex-shrink: 0;
+  }
+
+  &__part {
+
   }
 }
 
@@ -151,4 +157,8 @@ a {
 hr {
   box-sizing: content-box; // Проблема Firefox
   overflow: visible;       // Проблема Edge и IE
+}
+
+.gray {
+  background: #f3f2f2;
 }

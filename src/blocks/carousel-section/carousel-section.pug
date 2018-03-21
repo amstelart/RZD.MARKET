@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (carousel-section)
+
+mixin carousel-section(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +carousel-section('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' carousel-section--' + modsList[i].trim();
+      }
+    }
+
+  .carousel-section(class=allMods)&attributes(attributes)
+    .carousel-section__inner!= text

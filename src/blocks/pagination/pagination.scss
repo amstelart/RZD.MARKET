@@ -15,17 +15,25 @@ $border-color:                hsl(0, 0%, 60%) !default;
   margin-top: 1rem;
   margin-bottom: 1rem;
 
+  &--active {
+
+    background: $gray-gradient;
+    color: $text-color;
+  }
+
   &__item {
     display: block;
     padding: 0.5rem;
     min-width: 2.5rem;
     border: 1px solid $border-color;
+    border-radius: 6px;
+    background-color: #fff;
     text-decoration: none;
     text-align: center;
     color: $text-color;
 
     & + & {
-      border-left: 0;
+      margin-left: 5px;
     }
 
     &:hover,
@@ -38,12 +46,9 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
       &:hover,
       &:focus {
-        background-color: $gray-lightest;
+        background-color: #a1a1a1;
+        color: #fff;
       }
-    }
-
-    &--active {
-      background-color: $gray-lightest;
     }
   }
 }

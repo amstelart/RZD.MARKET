@@ -26,8 +26,15 @@ mixin page-header(mods)
         block
         .page-header__right
           form.search-form.page-header__search
-            input.search-form__input(type='search', placeholder='Type object id to search...')
-            button.search-form__btn Search
+            label.field-text
+              span.field-text__input-wrap
+                input.field-text__input(type='search', placeholder='Поле поиска')
+                button.btn.field-text__btn
+                  i.fa.fa-search
+
           .login
-            a.login__sign-in(href) Вход
-            a.login__reg(href) Регистрация
+            a(href="page-login.html").login__sign-in Вход
+            a(href="page-registration-user.html").login__reg Регистрация
+      .page-header__btn
+        button.btn Добавить объявление
+        button.btn Добавить магазин

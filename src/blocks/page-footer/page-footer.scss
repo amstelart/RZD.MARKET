@@ -18,18 +18,24 @@
 
   &__box {
     display: flex;
-
+    justify-content: space-between;
+    align-items: flex-end;
     padding-top: 35px;
     padding-bottom: 30px;
+    border-top: 4px solid #ff0000;
   }
 
-  &__right {
-    display: flex;
+  &__btn {
+
+    .btn + .btn {
+      margin-left: 20px;
+    }
   }
 
   &__copyright {
     color: #8d8d8d;
     font-size: 12px;
+    padding: 10px 0;
     text-align: right;
 
     a {

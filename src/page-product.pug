@@ -1,0 +1,104 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+    +logo('/')
+      img(src="img/logo.svg")
+    +main-nav('10')
+
+block content
+  
+  .page__part.gray
+    main.page__main-content(role="main")  
+      .product-section
+        .product-section__main
+          .product
+            .product__header
+              .product__header-inner
+                .product__title Локо сбыт
+                .product__actions
+                  button.btn.active
+                    i.fa.fa-heart(aria-hidden='true')
+                  button.btn
+                    i.fa.fa-share(aria-hidden='true')
+                .product__meta
+                  span № 152698
+                  span 25.01.2018
+                  span
+                    i.fa.fa-eye(aria-hidden='true')
+                    |  150 (9 сегодня)
+              .product__header-cost
+                .product__cost 152 555
+            .product__contacts
+              .product__shop-name
+                | Магазин: Лого Сбыт
+              .product__shop-phone
+                | +7 (911) 11-22-33
+              .product__shop-feedback
+                button.btn Написать
+            .product__gallegy
+            .product__info
+              .product__info-description
+                h4 Контактные данные
+                p
+                  | Сотояние: б/у
+                  br
+                  | ТУ: 2500-295-00153106-93
+                  br
+                  | Бренд: ОПТОН-ТЕХНО
+                  br
+                  | Вес: 2х55 кг
+                  br
+                  | Страна-производитель: Россия
+              .product__info-text
+                h4 Комментарии продавца
+                p
+                  | Продам или обменяю чери бонус. Требует небольших вложений,
+                  | за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография
+                  | из интернета
+        .product-section__sidebar
+          .xz-block
+          .xz-block
+  .page__part
+    main.page__main-content(role="main")  
+      .carousel-section
+        .carousel-section__header
+          h2 Похожие объявления
+        .product-carousel.owl-carousel
+          .product-card
+            a(href='#').product-card__link
+              .product-card__image
+                img(src='img/product-demo-image.jpg')
+              .product-card__body
+                h3.product-card__name Суфле междувагонных соединений
+                ul.product-card__description
+                  li <strong>ТУ:</strong> 2500-295-00152106-93
+                  li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                  li <strong>Вес:</strong> 2х55кг
+                  li <strong>Страна-производитель:</strong> Россия
+          .product-card
+            a(href='#').product-card__link
+              .product-card__image
+              .product-card__body
+                h3.product-card__name Суфле междувагонных соединений
+                ul.product-card__description
+                  li <strong>ТУ:</strong> 2500-295-00152106-93
+                  li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                  li <strong>Вес:</strong> 2х55кг
+                  li <strong>Страна-производитель:</strong> Россия
+
+block footer
+  +page-footer()
+    +logo('/')
+      img(src='img/logo.svg')
+    +main-nav('10')
+
+//- block page-bottom
+//-   script(src="js/some.js")

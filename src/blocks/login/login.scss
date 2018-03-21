@@ -1,0 +1,23 @@
+// В этом файле должны быть стили для БЭМ-блока login, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.login {
+
+  $block-name:                &; // #{$block-name}__element
+
+  a {
+    &:first-child {
+      &:after {
+        content: "|";
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &__sign-in,
+  &__reg {
+    color: #000;
+    text-decoration: none;
+  }
+}

@@ -14,250 +14,254 @@ block header
     +main-nav('10')
 
 block content
-  .search-box
-    .search-box__col
-      .search-box__wrap
-        form.form.form--search
-          .form__part
-            .field-select
-              select#select.field-select__select(name='select')
-                option.adfas(value='') Вагонная служба
-                option(value='') Опция2
-            .field-select
-              select#select.field-select__select(name='select')
-                option.adfas(value='') Подвижной состав
-                option(value='') Опция2
-            .field-select--double
-              .field-select
-                select#select.field-select__select(name='select')
-                  option.adfas(value='') Год от
-                  option(value='') Опция2
-              .field-select
-                select#select.field-select__select(name='select')
-                  option.adfas(value='') До
-                  option(value='') Опция2
-          .form__part
-            .field-select
-              select#select.field-select__select(name='select')
-                option.adfas(value='') Выберите тип вагона
-                option(value='') Опция2
-            .field-select
-              select#select.field-select__select(name='select')
-                option.adfas(value='') Ж/Д полигон
-                option(value='') Опция2
-            button.btn Найти
-    .search-box__col
-      .search-box__wrap
-        .xz-block
-  .catalog
-    .catalog__controls
-      .show-control
-        span.show-control__text Показать на странице:
-        .show-control__options
-          span.show-control__item.show-control__item--active 30
-          a(href="#").show-control__item 50
-          a(href="#").show-control__item все
+  .page__part.gray
+    main.page__main-content(role="main")
+      .search-box
+        .search-box__col
+          .search-box__wrap
+            form.form.form--search
+              .form__part
+                .field-select
+                  select#select.field-select__select(name='select')
+                    option.adfas(value='') Вагонная служба
+                    option(value='') Опция2
+                .field-select
+                  select#select.field-select__select(name='select')
+                    option.adfas(value='') Подвижной состав
+                    option(value='') Опция2
+                .field-select--double
+                  .field-select
+                    select#select.field-select__select(name='select')
+                      option.adfas(value='') Год от
+                      option(value='') Опция2
+                  .field-select
+                    select#select.field-select__select(name='select')
+                      option.adfas(value='') До
+                      option(value='') Опция2
+              .form__part
+                .field-select
+                  select#select.field-select__select(name='select')
+                    option.adfas(value='') Выберите тип вагона
+                    option(value='') Опция2
+                .field-select
+                  select#select.field-select__select(name='select')
+                    option.adfas(value='') Ж/Д полигон
+                    option(value='') Опция2
+                button.btn Найти
+        .search-box__col
+          .search-box__wrap
+            .xz-block
+  .page__part
+    main.page__main-content(role="main")
+      .catalog
+        .catalog__controls
+          .show-control
+            span.show-control__text Показать на странице:
+            .show-control__options
+              span.show-control__item.show-control__item--active 30
+              a(href="#").show-control__item 50
+              a(href="#").show-control__item все
 
-      .sort-control
-        .field-select
-          select#select.field-select__select(name='select')
-            option.adfas(value='') <i class="fa fa-sort-amount-asc" aria-hidden="true"></i> По цене
-            option(value='') Опция2
+          .sort-control
+            .field-select
+              select#select.field-select__select(name='select')
+                option.adfas(value='') <i class="fa fa-sort-amount-asc" aria-hidden="true"></i> По цене
+                option(value='') Опция2
 
-    .catalog__list
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-      .catalog__item
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-    .catalog__pagination
-      +pagination()
-        +pagination-item('1', '/1')
-        +pagination-item('...')
-        +pagination-item('4', '/4')
-        +pagination-item('5', '/5', true)
-        +pagination-item('6', '/6')
-        +pagination-item('...')
-        +pagination-item('999', '/999')
+        .catalog__list
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                  img(src='img/product-demo-image.jpg')
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                  img(src='img/product-demo-image.jpg')
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                  img(src='img/product-demo-image.jpg')
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                  img(src='img/product-demo-image.jpg')
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                  img(src='img/product-demo-image.jpg')
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                  img(src='img/product-demo-image.jpg')
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                  img(src='img/product-demo-image.jpg')
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                  img(src='img/product-demo-image.jpg')
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+          .catalog__item
+            .product-card
+              a(href='#').product-card__link
+                .product-card__image
+                .product-card__body
+                  h3.product-card__name Суфле междувагонных соединений
+                  ul.product-card__description
+                    li <strong>ТУ:</strong> 2500-295-00152106-93
+                    li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                    li <strong>Вес:</strong> 2х55кг
+                    li <strong>Страна-производитель:</strong> Россия
+        .catalog__pagination
+          +pagination()
+            +pagination-item('1', '/1')
+            +pagination-item('...')
+            +pagination-item('4', '/4')
+            +pagination-item('5', '/5', true)
+            +pagination-item('6', '/6')
+            +pagination-item('...')
+            +pagination-item('999', '/999')
 
 block footer
   +page-footer()

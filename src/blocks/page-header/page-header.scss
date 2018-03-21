@@ -13,16 +13,29 @@
   }
 
   &__banner {
-    margin-top: 10px;
+    padding-top: 10px;
   }
 
   &__box {
     display: flex;
     padding-top: 35px;
     padding-bottom: 30px;
+    align-items: flex-end;
   }
 
   &__right {
     display: flex;
+    margin-left: 20px;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__btn {
+    padding-bottom: 20px;
+
+    .btn + .btn {
+      margin-left: 20px;
+    }
   }
 }

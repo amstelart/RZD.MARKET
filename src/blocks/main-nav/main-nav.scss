@@ -52,6 +52,11 @@ $transition-time:             0.3s !default;
       display: flex;
       flex-wrap: wrap;
 
+      #{$block-name}__link {
+        padding: 0.5em 1em 0 1em;
+        line-height: 1;
+      }
+
       &--lvl-2 {
         display: block;
       }
@@ -81,8 +86,7 @@ $transition-time:             0.3s !default;
 
     &:hover,
     &:focus {
-      text-decoration: none;
-      background-color: $gray-lightest;
+      text-decoration: underline;
     }
 
     &--lvl-2 {

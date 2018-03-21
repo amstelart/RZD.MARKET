@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока product-section, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+
+  &__main {
+    @include col();
+    @include col(lg, 9);
+  }
+
+  &__sidebar {
+    @include col();
+    @include col(lg, 3);
+
+    .xz-block {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #a2a2a2;
+      border-radius: 0.35714rem;
+      margin-bottom: 20px;
+      min-height: 210px;
+    }
+  }
+}

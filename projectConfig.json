@@ -87,7 +87,13 @@
     "sort-control": [],
     "search-box": [],
     "shop-card": [],
-    "shops": []
+    "shops": [],
+    "product-section": [],
+    "carousel-section": [],
+    "product": [],
+    "search-form": [],
+    "field-search": [],
+    "login": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

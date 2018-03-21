@@ -14,310 +14,312 @@ block header
     +main-nav('10')
 
 block content
-  section.sidebar-section.sidebar-section--right
-    .sidebar-section__main-col
-      .main-catalog-wrap
-        .tabs.tabs--catalog
-          ul.tabs__links(role='tablist')
-            li.tabs__link-wrap.tabs__link-wrap--active(role='presentation')
-              a.tabs__link(href='#tab00', data-toggle='tab', role='tab') Товары
-            li.tabs__link-wrap(role='presentation')
-              a.tabs__link(href='#tab01', data-toggle='tab', role='tab') Услуги
-            .btn-group
-              a(href="#").btn Добавить объявление
-              a(href="#").btn Добавить магазин
-          .tabs__content-wrapper
-            #tab00.tabs__content-item.tabs__content-item--active(role='tabpanel')
-              ul.catalog-list
-                li
-                  | Вагонная сдужба
-                  span 1535
-                  ul
-                    li
-                      a(href='') Запасные части
-                    li
-                      a(href='') Подвидной состав
-                li
-                  | Локомотивная служба
-                  span 759
-                  ul
-                    li
-                      a(href='') Запасные части
-                    li
-                      a(href='') Подвидной состав
-                li
-                  | Локомотивная служба
-                  span 4135
-                  ul
-                    li
-                      a(href='') Рельсы
-                    li
-                      a(href='') Шпалы
-                    li
-                      a(href='') Промежуточные рельсовые скрепления
-                    li
-                      a(href='') Щебеночный баласт
-                    li
-                      a(href='') Промежуточные рельсовые скрепления
-                li
-                  | Сигнал и связь
-                  span 1535
-                  ul
-                    li
-                      a(href='') Централизация стрелочных переводов
-                    li
-                      a(href='') Железнодорожные светофоры
-                    li
-                      a(href='') Рельсовые цепи
-                    li
-                      a(href='') Кабельные сети
-                    li
-                      a(href='') Автоматическая передняя сигнализация
-                    li
-                      a(href='') Стационарные системы электрической сигнализации и контроля
-                li
-                  | Пассаж
-                  ul
-                    li
-                      a(href='') Подвижной состав
-                    li
-                      a(href='') Запасные части
-                    li
-                      a(href='') Подвижной состав
-                    li
-                      a(href='') Запасные части
-                li
-                  | Электроснаб
-                  ul
-                    li
-                      a(href='') Контактная сеть
-                    li
-                      a(href='') Линии электропередачи
-                    li
-                      a(href='') Релейные защиты
-                    li
-                      a(href='') Устройства автоматики и телемеханики
-                    li
-                      a(href='') Средства технического диагностирования
-                    li
-                      a(href='') Оборудование тяговых и трансформаторных подстанций
+  main.page__main-content(role="main")
+    section.sidebar-section.sidebar-section--right
+      .sidebar-section__main-col
+        .main-catalog-wrap
+          .tabs.tabs--catalog
+            ul.tabs__links(role='tablist')
+              li.tabs__link-wrap.tabs__link-wrap--active(role='presentation')
+                a.tabs__link(href='#tab00', data-toggle='tab', role='tab') Товары
+              li.tabs__link-wrap(role='presentation')
+                a.tabs__link(href='#tab01', data-toggle='tab', role='tab') Услуги
+              .btn-group
+                a(href="#").btn Добавить объявление
+                a(href="#").btn Добавить магазин
+            .tabs__content-wrapper
+              #tab00.tabs__content-item.tabs__content-item--active(role='tabpanel')
+                ul.catalog-list
+                  li
+                    | Вагонная сдужба
+                    span 1535
+                    ul
+                      li
+                        a(href='') Запасные части
+                      li
+                        a(href='') Подвидной состав
+                  li
+                    | Локомотивная служба
+                    span 759
+                    ul
+                      li
+                        a(href='') Запасные части
+                      li
+                        a(href='') Подвидной состав
+                  li
+                    | Локомотивная служба
+                    span 4135
+                    ul
+                      li
+                        a(href='') Рельсы
+                      li
+                        a(href='') Шпалы
+                      li
+                        a(href='') Промежуточные рельсовые скрепления
+                      li
+                        a(href='') Щебеночный баласт
+                      li
+                        a(href='') Промежуточные рельсовые скрепления
+                  li
+                    | Сигнал и связь
+                    span 1535
+                    ul
+                      li
+                        a(href='') Централизация стрелочных переводов
+                      li
+                        a(href='') Железнодорожные светофоры
+                      li
+                        a(href='') Рельсовые цепи
+                      li
+                        a(href='') Кабельные сети
+                      li
+                        a(href='') Автоматическая передняя сигнализация
+                      li
+                        a(href='') Стационарные системы электрической сигнализации и контроля
+                  li
+                    | Пассаж
+                    ul
+                      li
+                        a(href='') Подвижной состав
+                      li
+                        a(href='') Запасные части
+                      li
+                        a(href='') Подвижной состав
+                      li
+                        a(href='') Запасные части
+                  li
+                    | Электроснаб
+                    ul
+                      li
+                        a(href='') Контактная сеть
+                      li
+                        a(href='') Линии электропередачи
+                      li
+                        a(href='') Релейные защиты
+                      li
+                        a(href='') Устройства автоматики и телемеханики
+                      li
+                        a(href='') Средства технического диагностирования
+                      li
+                        a(href='') Оборудование тяговых и трансформаторных подстанций
 
-            #tab01.tabs__content-item(role='tabpanel')
-              p За словесными горами в стране, гласных и согласных живут рыбные тексты.1
+              #tab01.tabs__content-item(role='tabpanel')
+                p За словесными горами в стране, гласных и согласных живут рыбные тексты.1
 
-    .sidebar-section__sidebar-col
-      .sidebar-card
-        .sidebar-card__header
-          .sidebar-card__title Новые объявления
-        .sidebar-card__body
-          .latest-news
-            .latest-news__item
-              h5.latest-news__title
-                a(href='#') Суфле междувагонных соединений
-              .latest-news__date
-                span 12.02.18
-                span 18:03
-            .latest-news__item
-              h5.latest-news__title
-                a(href='#') Колесная пара
-              .latest-news__date
-                span 12.02.18
-                span 18:03
-            .latest-news__item
-              h5.latest-news__title
-                a(href='#') Подвеска трангеля
-              .latest-news__date
-                span 12.02.18
-                span 18:03
-            .latest-news__item
-              h5.latest-news__title
-                a(href='#') Суфле междувагонных соединений
-              .latest-news__date
-                span 12.02.18
-                span 18:03
-            .latest-news__item
-              h5.latest-news__title
-                a(href='#') Колесная пара
-              .latest-news__date
-                span 12.02.18
-                span 18:03
+      .sidebar-section__sidebar-col
+        .sidebar-card
+          .sidebar-card__header
+            .sidebar-card__title Новые объявления
+          .sidebar-card__body
+            .latest-news
+              .latest-news__item
+                h5.latest-news__title
+                  a(href='#') Суфле междувагонных соединений
+                .latest-news__date
+                  span 12.02.18
+                  span 18:03
+              .latest-news__item
+                h5.latest-news__title
+                  a(href='#') Колесная пара
+                .latest-news__date
+                  span 12.02.18
+                  span 18:03
+              .latest-news__item
+                h5.latest-news__title
+                  a(href='#') Подвеска трангеля
+                .latest-news__date
+                  span 12.02.18
+                  span 18:03
+              .latest-news__item
+                h5.latest-news__title
+                  a(href='#') Суфле междувагонных соединений
+                .latest-news__date
+                  span 12.02.18
+                  span 18:03
+              .latest-news__item
+                h5.latest-news__title
+                  a(href='#') Колесная пара
+                .latest-news__date
+                  span 12.02.18
+                  span 18:03
 
-  section.main-section
-    .main-section__header
-      h2.main-section__title Срочная продажа
-    .main-section__body
-      .product-carousel.owl-carousel
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
+    section.main-section
+      .main-section__header
+        h2.main-section__title Срочная продажа
+      .main-section__body
+        .product-carousel.owl-carousel
+          .product-card
+            a(href='page-product.html').product-card__link
+              .product-card__image
+                img(src='img/product-demo-image.jpg')
+              .product-card__body
+                h3.product-card__name Суфле междувагонных соединений
+                ul.product-card__description
+                  li <strong>ТУ:</strong> 2500-295-00152106-93
+                  li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                  li <strong>Вес:</strong> 2х55кг
+                  li <strong>Страна-производитель:</strong> Россия
+          .product-card
+            a(href='#').product-card__link
+              .product-card__image
+              .product-card__body
+                h3.product-card__name Суфле междувагонных соединений
+                ul.product-card__description
+                  li <strong>ТУ:</strong> 2500-295-00152106-93
+                  li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                  li <strong>Вес:</strong> 2х55кг
+                  li <strong>Страна-производитель:</strong> Россия
 
-  section.main-section
-    .main-section__header
-      h2.main-section__title Услуги
-    .main-section__body
-      .product-carousel.owl-carousel
-        .product-card
-          a(href='#').product-card__link
-            .product-card__image
-              img(src='img/product-demo-image.jpg')
-            .product-card__body
-              h3.product-card__name Суфле междувагонных соединений
-              ul.product-card__description
-                li <strong>ТУ:</strong> 2500-295-00152106-93
-                li <strong>Бренд:</strong> ОПТОН-ТЕХНО
-                li <strong>Вес:</strong> 2х55кг
-                li <strong>Страна-производитель:</strong> Россия
+    section.main-section
+      .main-section__header
+        h2.main-section__title Услуги
+      .main-section__body
+        .product-carousel.owl-carousel
+          .product-card
+            a(href='page-product.html').product-card__link
+              .product-card__image
+                img(src='img/product-demo-image.jpg')
+              .product-card__body
+                h3.product-card__name Суфле междувагонных соединений
+                ul.product-card__description
+                  li <strong>ТУ:</strong> 2500-295-00152106-93
+                  li <strong>Бренд:</strong> ОПТОН-ТЕХНО
+                  li <strong>Вес:</strong> 2х55кг
+                  li <strong>Страна-производитель:</strong> Россия
 
-  section.page__main-banner
-    a(href='#')
-      img(src='img/top-banner.jpg')
+    section.page__main-banner
+      a(href='#')
+        img(src='img/top-banner.jpg')
 
-  section.main-section.main-section--bordered
-    .main-section__header
-      h2.main-section__title Магазины
-    .main-section__body
-      .main-shops-list
-        .main-shops-list__card
-          h3 Локо сбыт
-          p 302040, г. Москва, ул. Лескова, 19
-          p +7-900-111-11-11
-          p lokosbyt@yandex.ru
-          p Всего объявлений: 31
-        .main-shops-list__card
-          h3 Локо сбыт
-          p 302040, г. Москва, ул. Лескова, 19
-          p +7-900-111-11-11
-          p lokosbyt@yandex.ru
-          p Всего объявлений: 31
-        .main-shops-list__card
-          h3 Локо сбыт
-          p 302040, г. Москва, ул. Лескова, 19
-          p +7-900-111-11-11
-          p lokosbyt@yandex.ru
-          p Всего объявлений: 31
-        .main-shops-list__card
-          h3 Локо сбыт
-          p 302040, г. Москва, ул. Лескова, 19
-          p +7-900-111-11-11
-          p lokosbyt@yandex.ru
-          p Всего объявлений: 31
-        .main-shops-list__card
-          h3 Локо сбыт
-          p 302040, г. Москва, ул. Лескова, 19
-          p +7-900-111-11-11
-          p lokosbyt@yandex.ru
-          p Всего объявлений: 31
-        .main-shops-list__card
-          h3 Локо сбыт
-          p 302040, г. Москва, ул. Лескова, 19
-          p +7-900-111-11-11
-          p lokosbyt@yandex.ru
-          p Всего объявлений: 31
-        .main-shops-list__card
-          h3 Локо сбыт
-          p 302040, г. Москва, ул. Лескова, 19
-          p +7-900-111-11-11
-          p lokosbyt@yandex.ru
-          p Всего объявлений: 31
-        .main-shops-list__card
-          h3 Локо сбыт
-          p 302040, г. Москва, ул. Лескова, 19
-          p +7-900-111-11-11
-          p lokosbyt@yandex.ru
-          p Всего объявлений: 31
-      button.btn Показать еще
-  section.main-feedback
-    .main-feedback__col
-      .subscription
-        .subscription__header
-          h3.subscription__title Получайте уведомления по интересующим объявлениям
-        .subscription__body
-          form.form.form--subscription
-            .form__part
-              .field-select
-                select#select.field-select__select(name='select')
-                  option(value='') Локомотивная служба
-                  option(value='') Опция2
-            .form__part
-              .field-select
-                select#select.field-select__select(name='select')
-                  option(value='') Выберите категорию
-                  option(value='') Опция2
-              .field-link
-                a(href='#') Добавить еще категорию
-            .form__part
-              label.field-text
-                span.field-text__input-wrap
-                  input.field-text__input(type='email', placeholder='Email', name='comment')
-              .field-btn
-                button.btn Подписаться
+    section.main-section.main-section--bordered
+      .main-section__header
+        h2.main-section__title Магазины
+      .main-section__body
+        .main-shops-list
+          .main-shops-list__card
+            h3 Локо сбыт
+            p 302040, г. Москва, ул. Лескова, 19
+            p +7-900-111-11-11
+            p lokosbyt@yandex.ru
+            p Всего объявлений: 31
+          .main-shops-list__card
+            h3 Локо сбыт
+            p 302040, г. Москва, ул. Лескова, 19
+            p +7-900-111-11-11
+            p lokosbyt@yandex.ru
+            p Всего объявлений: 31
+          .main-shops-list__card
+            h3 Локо сбыт
+            p 302040, г. Москва, ул. Лескова, 19
+            p +7-900-111-11-11
+            p lokosbyt@yandex.ru
+            p Всего объявлений: 31
+          .main-shops-list__card
+            h3 Локо сбыт
+            p 302040, г. Москва, ул. Лескова, 19
+            p +7-900-111-11-11
+            p lokosbyt@yandex.ru
+            p Всего объявлений: 31
+          .main-shops-list__card
+            h3 Локо сбыт
+            p 302040, г. Москва, ул. Лескова, 19
+            p +7-900-111-11-11
+            p lokosbyt@yandex.ru
+            p Всего объявлений: 31
+          .main-shops-list__card
+            h3 Локо сбыт
+            p 302040, г. Москва, ул. Лескова, 19
+            p +7-900-111-11-11
+            p lokosbyt@yandex.ru
+            p Всего объявлений: 31
+          .main-shops-list__card
+            h3 Локо сбыт
+            p 302040, г. Москва, ул. Лескова, 19
+            p +7-900-111-11-11
+            p lokosbyt@yandex.ru
+            p Всего объявлений: 31
+          .main-shops-list__card
+            h3 Локо сбыт
+            p 302040, г. Москва, ул. Лескова, 19
+            p +7-900-111-11-11
+            p lokosbyt@yandex.ru
+            p Всего объявлений: 31
+        button.btn Показать еще
 
-    .main-feedback__col
-      .reviews
-        .reviews__header
-          .reviews__title Отзывы
-        .reviews__body
-          .owl-carousel.reviews__carousel
-            .reviews__item
-              h3.reviews__item-title
-                | ООО Оптомн - импэкс
-              .reviews__item-caption
-                p
-                  | За время использования при проведении ремонта подвижного состава
-                  | поставленных этим предприятием изделий рекламаций и нареканий от служб
-                  | качества и эксплуатации не поступало.
-                p
-                  | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
-                  | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
-                  | с положительной стороны.
-            .reviews__item
-              h3.reviews__item-title
-                | ООО Оптомн - импэкс
-              .reviews__item-caption
-                p
-                  | За время использования при проведении ремонта подвижного состава
-                  | поставленных этим предприятием изделий рекламаций и нареканий от служб
-                  | качества и эксплуатации не поступало.
-                p
-                  | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
-                  | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
-                  | с положительной стороны.
-                  | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
-                  | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
-                  | с положительной стороны.
-            .reviews__item
-              h3.reviews__item-title
-                | ООО Оптомн - импэкс
-              .reviews__item-caption
-                p
-                  | За время использования при проведении ремонта подвижного состава
-                  | поставленных этим предприятием изделий рекламаций и нареканий от служб
-                  | качества и эксплуатации не поступало.
-                  | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
-                  | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
-                  | с положительной стороны.
-                p
-                  | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
-                  | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
-                  | с положительной стороны.
+    section.main-feedback
+      .main-feedback__col
+        .subscription
+          .subscription__header
+            h3.subscription__title Получайте уведомления по интересующим объявлениям
+          .subscription__body
+            form.form.form--subscription
+              .form__part
+                .field-select
+                  select#select.field-select__select(name='select')
+                    option(value='') Локомотивная служба
+                    option(value='') Опция2
+              .form__part
+                .field-select
+                  select#select.field-select__select(name='select')
+                    option(value='') Выберите категорию
+                    option(value='') Опция2
+                .field-link
+                  a(href='#') Добавить еще категорию
+              .form__part
+                label.field-text
+                  span.field-text__input-wrap
+                    input.field-text__input(type='email', placeholder='Email', name='comment')
+                .field-btn
+                  button.btn Подписаться
+
+      .main-feedback__col
+        .reviews
+          .reviews__header
+            .reviews__title Отзывы
+          .reviews__body
+            .owl-carousel.reviews__carousel
+              .reviews__item
+                h3.reviews__item-title
+                  | ООО Оптомн - импэкс
+                .reviews__item-caption
+                  p
+                    | За время использования при проведении ремонта подвижного состава
+                    | поставленных этим предприятием изделий рекламаций и нареканий от служб
+                    | качества и эксплуатации не поступало.
+                  p
+                    | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
+                    | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
+                    | с положительной стороны.
+              .reviews__item
+                h3.reviews__item-title
+                  | ООО Оптомн - импэкс
+                .reviews__item-caption
+                  p
+                    | За время использования при проведении ремонта подвижного состава
+                    | поставленных этим предприятием изделий рекламаций и нареканий от служб
+                    | качества и эксплуатации не поступало.
+                  p
+                    | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
+                    | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
+                    | с положительной стороны.
+                    | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
+                    | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
+                    | с положительной стороны.
+              .reviews__item
+                h3.reviews__item-title
+                  | ООО Оптомн - импэкс
+                .reviews__item-caption
+                  p
+                    | За время использования при проведении ремонта подвижного состава
+                    | поставленных этим предприятием изделий рекламаций и нареканий от служб
+                    | качества и эксплуатации не поступало.
+                    | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
+                    | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
+                    | с положительной стороны.
+                  p
+                    | Все поставки осуществляются в установленные  договором сроки. ООО "ОПТОН
+                    | ИМПЭКС" является надежным партнером, зарекомендовавшим себя только
+                    | с положительной стороны.
 
 block footer
   +page-footer()

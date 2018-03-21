@@ -27,6 +27,7 @@ $border-radius:               rem(3px) !default;
 
   &__input-wrap {
     display: block;
+    position: relative;
   }
 
   &__input {
@@ -34,7 +35,7 @@ $border-radius:               rem(3px) !default;
     vertical-align: middle;
     width: 100%;
     // height: 2.125em;
-    padding: $field-padding-vertical  $field-padding-horizontal;
+    padding: $field-padding-vertical 2.2em $field-padding-vertical $field-padding-horizontal;
     margin: 0;
     line-height: $line-height;
     font-size: 1em;
@@ -45,7 +46,7 @@ $border-radius:               rem(3px) !default;
     appearance: textfield;
 
     &:focus {
-      @include field-focus;
+      outline: none;
     }
 
     &[disabled],
@@ -80,6 +81,22 @@ $border-radius:               rem(3px) !default;
       height: auto;
       min-height: calc(#{$textarea-height} + 2px);
       resize: vertical;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 14px;
+    padding: 0.4em 0.6em;
+    border: none;
+    background: none;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      outline: none;
     }
   }
 
