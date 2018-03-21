@@ -371,11 +371,18 @@
 <code>        block</code>
 <code>        .page-header__right</code>
 <code>          form.search-form.page-header__search</code>
-<code>            input.search-form__input(type='search', placeholder='Type object id to search...')</code>
-<code>            button.search-form__btn Search</code>
+<code>            label.field-text</code>
+<code>              span.field-text__input-wrap</code>
+<code>                input.field-text__input(type='search', placeholder='Поле поиска')</code>
+<code>                button.btn.field-text__btn</code>
+<code>                  i.fa.fa-search</code>
+<code>&nbsp;</code>
 <code>          .login</code>
-<code>            a.login__sign-in(href) Вход</code>
-<code>            a.login__reg(href) Регистрация</code>
+<code>            a(href="page-login.html").login__sign-in Вход</code>
+<code>            a(href="page-registration-user.html").login__reg Регистрация</code>
+<code>      .page-header__btn</code>
+<code>        button.btn Добавить объявление</code>
+<code>        button.btn Добавить магазин</code>
 </pre>
               </div>
             </div>
@@ -417,9 +424,9 @@
 <code>    .page-footer__inner</code>
 <code>      .page-footer__box</code>
 <code>        block</code>
-<code>        .page-footer__right</code>
-<code>          a.btn(href="") Добавить объявление</code>
-<code>          a.btn(href="") Добавить магазин</code>
+<code>        .page-footer__btn</code>
+<code>          button.btn Добавить объявление</code>
+<code>          button.btn Добавить магазин</code>
 <code>      .page-footer__copyright</code>
 <code>        p Разработка сайта - <a href="http://www.2showbiz.ru">Showbiz Studio</a></code>
 </pre>
@@ -479,25 +486,10 @@
             <p>На малых ширинах преобразуется в мобильный вид, скрывается/показывается по клику на бургер, если JS включен (на <code>html</code> есть класс <code>js</code>).</p>
             <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
-                <li class="main-nav__item  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
-                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list  main-nav__list--lvl-2">
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
-                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
-                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-                          <ul class="main-nav__list  main-nav__list--lvl-3">
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
               </ul>
             </nav>
             <div class="blocks-library__code-wrapper"><span class="blocks-library__code-show-trigger" title="Показать код"><i class="blocks-library__code-icon"></i></span>

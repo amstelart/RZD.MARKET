@@ -54,82 +54,66 @@
           <div class="page-header__box"><a class="logo" href="/"><img src="img/logo.svg"></a>
             <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
-                <li class="main-nav__item  main-nav__item--active  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
-                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list  main-nav__list--lvl-2">
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
-                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
-                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-                          <ul class="main-nav__list  main-nav__list--lvl-3">
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
               </ul>
             </nav>
             <div class="page-header__right">
-              <form class="search-form page-header__search"><input class="search-form__input" type="search" placeholder="Type object id to search..." /><button class="search-form__btn">Search</button></form>
-              <div class="login"><a class="login__sign-in" href="href">Вход</a><a class="login__reg" href="href">Регистрация</a></div>
+              <form class="search-form page-header__search"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="search" placeholder="Поле поиска"/><button class="btn field-text__btn"><i class="fa fa-search"></i></button></span></label></form>
+              <div class="login"><a class="login__sign-in" href="page-login.html">Вход</a><a class="login__reg" href="page-registration-user.html">Регистрация</a></div>
             </div>
           </div>
+          <div class="page-header__btn"><button class="btn">Добавить объявление</button><button class="btn">Добавить магазин</button></div>
         </div>
       </header>
-      <main class="page__main-content" role="main">
-        <div class="lk-section">
-          <div class="lk-section__sidebar-col">
-            <div class="lk-sidebar">
-              <ul class="menu menu--sidebar">
-                <li class="menu__item"><a class="menu__link" href="/">Мои объявления</a></li>
-                <li class="menu__item menu__item--active"><a class="menu__link" href="/">Сообщения</a></li>
-                <li class="menu__item"><a class="menu__link" href="/">Настройки</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="lk-section__main-col">
-            <div class="lk-main">
-              <div class="lk-main__header">
-                <h2 class="lk-main__title">Контактная информация</h2>
-              </div>
-              <div class="lk-main__body">
-                <div class="lk-settings">
-                  <div class="lk-settings__part">
-                    <form class="form form--settings"><label class="field-text"><span class="field-text__name">Имя</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder="Евгений"></span></label><label class="field-text"><span class="field-text__name">Город</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder="Москва"></span></label>
-                      <div class="field-actions"><button class="btn">Сохранить</button></div>
-                    </form>
-                  </div>
-                  <div class="lk-settings__part">
-                    <form class="form form--settings"><label class="field-text"><span class="field-text__name">Телефон</span><span class="field-text__input-wrap"><input class="field-text__input" type="tel" value="" placeholder="+7 (910) 310-11-11"></span></label><label class="field-text"><span class="field-text__name">Email</span><span class="field-text__input-wrap"><input class="field-text__input" type="email" value="" placeholder="loco@yandex.ru"></span></label>
-                      <div class="field-checkbox">
-                        <div class="field-checkbox__input-wrap"><label class="field-checkbox__name"><input class="field-checkbox__input" type="checkbox" name="check0"><span class="field-checkbox__name-text">Присылать уведомления на электронную почту</span></label></div>
-                      </div>
-                      <div class="field-actions"><button class="btn">Сохранить</button></div>
-                    </form>
-                  </div>
-                  <div class="lk-settings__part">
-                    <h2 class="lk-settings__title">Смена пароля</h2>
-                    <form class="form form--settings"><label class="field-text"><span class="field-text__name">Текущий</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder=""></span></label><label class="field-text"><span class="field-text__name">Новый</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder=""></span></label><label class="field-text"><span class="field-text__name">Повторите пароль</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder=""></span></label>
-                      <div class="field-actions"><button class="btn">Сохранить</button></div>
-                    </form>
-                  </div>
-                  <div class="lk-settings__part">
-                    <h2 class="lk-settings__title">Удаление учетной записи</h2>
-                    <p>Если вы хотите навсегда идалить свою учетную запись и все свои объявления, то нажмите на кнопку «Удаление учетной записи»</p>
-                  </div>
-                </div>
-              </div>
-              <div class="lk-main__footer"></div>
-            </div>
+      <div class="lk-section">
+        <div class="lk-section__sidebar-col">
+          <div class="lk-sidebar">
+            <ul class="menu menu--sidebar">
+              <li class="menu__item"><a class="menu__link" href="/">Мои объявления</a></li>
+              <li class="menu__item menu__item--active"><a class="menu__link" href="/">Сообщения</a></li>
+              <li class="menu__item"><a class="menu__link" href="/">Настройки</a></li>
+            </ul>
           </div>
         </div>
-      </main>
+        <div class="lk-section__main-col">
+          <div class="lk-main">
+            <div class="lk-main__header">
+              <h2 class="lk-main__title">Контактная информация</h2>
+            </div>
+            <div class="lk-main__body">
+              <div class="lk-settings">
+                <div class="lk-settings__part">
+                  <form class="form form--settings"><label class="field-text"><span class="field-text__name">Имя</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder="Евгений"></span></label><label class="field-text"><span class="field-text__name">Город</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder="Москва"></span></label>
+                    <div class="field-actions"><button class="btn">Сохранить</button></div>
+                  </form>
+                </div>
+                <div class="lk-settings__part">
+                  <form class="form form--settings"><label class="field-text"><span class="field-text__name">Телефон</span><span class="field-text__input-wrap"><input class="field-text__input" type="tel" value="" placeholder="+7 (910) 310-11-11"></span></label><label class="field-text"><span class="field-text__name">Email</span><span class="field-text__input-wrap"><input class="field-text__input" type="email" value="" placeholder="loco@yandex.ru"></span></label>
+                    <div class="field-checkbox">
+                      <div class="field-checkbox__input-wrap"><label class="field-checkbox__name"><input class="field-checkbox__input" type="checkbox" name="check0"><span class="field-checkbox__name-text">Присылать уведомления на электронную почту</span></label></div>
+                    </div>
+                    <div class="field-actions"><button class="btn">Сохранить</button></div>
+                  </form>
+                </div>
+                <div class="lk-settings__part">
+                  <h2 class="lk-settings__title">Смена пароля</h2>
+                  <form class="form form--settings"><label class="field-text"><span class="field-text__name">Текущий</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder=""></span></label><label class="field-text"><span class="field-text__name">Новый</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder=""></span></label><label class="field-text"><span class="field-text__name">Повторите пароль</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder=""></span></label>
+                    <div class="field-actions"><button class="btn">Сохранить</button></div>
+                  </form>
+                </div>
+                <div class="lk-settings__part">
+                  <h2 class="lk-settings__title">Удаление учетной записи</h2>
+                  <p>Если вы хотите навсегда идалить свою учетную запись и все свои объявления, то нажмите на кнопку «Удаление учетной записи»</p>
+                </div>
+              </div>
+            </div>
+            <div class="lk-main__footer"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
@@ -137,28 +121,13 @@
           <div class="page-footer__box"><a class="logo" href="/"><img src="img/logo.svg"></a>
             <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
-                <li class="main-nav__item  main-nav__item--active  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
-                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list  main-nav__list--lvl-2">
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
-                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
-                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-                          <ul class="main-nav__list  main-nav__list--lvl-3">
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
               </ul>
             </nav>
-            <div class="page-footer__right"><a class="btn" href="">Добавить объявление</a><a class="btn" href="">Добавить магазин</a></div>
+            <div class="page-footer__btn"><button class="btn">Добавить объявление</button><button class="btn">Добавить магазин</button></div>
           </div>
           <div class="page-footer__copyright">
             <p>Разработка сайта - <a href="http://www.2showbiz.ru">Showbiz Studio</a></p>

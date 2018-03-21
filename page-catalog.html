@@ -54,331 +54,323 @@
           <div class="page-header__box"><a class="logo" href="/"><img src="img/logo.svg"></a>
             <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
-                <li class="main-nav__item  main-nav__item--active  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
-                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list  main-nav__list--lvl-2">
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
-                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
-                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-                          <ul class="main-nav__list  main-nav__list--lvl-3">
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
               </ul>
             </nav>
             <div class="page-header__right">
-              <form class="search-form page-header__search"><input class="search-form__input" type="search" placeholder="Type object id to search..." /><button class="search-form__btn">Search</button></form>
-              <div class="login"><a class="login__sign-in" href="href">Вход</a><a class="login__reg" href="href">Регистрация</a></div>
+              <form class="search-form page-header__search"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="search" placeholder="Поле поиска"/><button class="btn field-text__btn"><i class="fa fa-search"></i></button></span></label></form>
+              <div class="login"><a class="login__sign-in" href="page-login.html">Вход</a><a class="login__reg" href="page-registration-user.html">Регистрация</a></div>
             </div>
           </div>
+          <div class="page-header__btn"><button class="btn">Добавить объявление</button><button class="btn">Добавить магазин</button></div>
         </div>
       </header>
-      <main class="page__main-content" role="main">
-        <div class="search-box">
-          <div class="search-box__col">
-            <div class="search-box__wrap">
-              <form class="form form--search">
-                <div class="form__part">
-                  <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Вагонная служба</option><option value="">Опция2</option></select></div>
-                  <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Подвижной состав</option><option value="">Опция2</option></select></div>
-                  <div class="field-select--double">
-                    <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Год от</option><option value="">Опция2</option></select></div>
-                    <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">До</option><option value="">Опция2</option></select></div>
+      <div class="page__part gray">
+        <main class="page__main-content" role="main">
+          <div class="search-box">
+            <div class="search-box__col">
+              <div class="search-box__wrap">
+                <form class="form form--search">
+                  <div class="form__part">
+                    <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Вагонная служба</option><option value="">Опция2</option></select></div>
+                    <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Подвижной состав</option><option value="">Опция2</option></select></div>
+                    <div class="field-select--double">
+                      <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Год от</option><option value="">Опция2</option></select></div>
+                      <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">До</option><option value="">Опция2</option></select></div>
+                    </div>
                   </div>
+                  <div class="form__part">
+                    <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Выберите тип вагона</option><option value="">Опция2</option></select></div>
+                    <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Ж/Д полигон</option><option value="">Опция2</option></select></div><button class="btn">Найти</button></div>
+                </form>
+              </div>
+            </div>
+            <div class="search-box__col">
+              <div class="search-box__wrap">
+                <div class="xz-block"></div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="page__part">
+        <main class="page__main-content" role="main">
+          <div class="catalog">
+            <div class="catalog__controls">
+              <div class="show-control"><span class="show-control__text">Показать на странице:</span>
+                <div class="show-control__options"><span class="show-control__item show-control__item--active">30</span><a class="show-control__item" href="#">50</a><a class="show-control__item" href="#">все</a></div>
+              </div>
+              <div class="sort-control">
+                <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value=""><i class="fa fa-sort-amount-asc" aria-hidden="true"></i> По цене</option><option value="">Опция2</option></select></div>
+              </div>
+            </div>
+            <div class="catalog__list">
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
                 </div>
-                <div class="form__part">
-                  <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Выберите тип вагона</option><option value="">Опция2</option></select></div>
-                  <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value="">Ж/Д полигон</option><option value="">Опция2</option></select></div><button class="btn">Найти</button></div>
-              </form>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__body">
+                      <h3 class="product-card__name">Суфле междувагонных соединений</h3>
+                      <ul class="product-card__description">
+                        <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                        <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                        <li><strong>Вес:</strong> 2х55кг</li>
+                        <li><strong>Страна-производитель:</strong> Россия</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__pagination">
+              <div class="pagination" aria-label="Page navigation"><a class="pagination__item" href="/1">1</a><span class="pagination__item">...</span><a class="pagination__item" href="/4">4</a><a class="pagination__item  pagination--active" href="/5">5</a><a class="pagination__item" href="/6">6</a><span class="pagination__item">...</span><a class="pagination__item" href="/999">999</a></div>
             </div>
           </div>
-          <div class="search-box__col">
-            <div class="search-box__wrap">
-              <div class="xz-block"></div>
-            </div>
-          </div>
-        </div>
-        <div class="catalog">
-          <div class="catalog__controls">
-            <div class="show-control"><span class="show-control__text">Показать на странице:</span>
-              <div class="show-control__options"><span class="show-control__item show-control__item--active">30</span><a class="show-control__item" href="#">50</a><a class="show-control__item" href="#">все</a></div>
-            </div>
-            <div class="sort-control">
-              <div class="field-select"><select class="field-select__select" id="select" name="select"><option class="adfas" value=""><i class="fa fa-sort-amount-asc" aria-hidden="true"></i> По цене</option><option value="">Опция2</option></select></div>
-            </div>
-          </div>
-          <div class="catalog__list">
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"><img src="img/product-demo-image.jpg"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="catalog__item">
-              <div class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__image"></div>
-                  <div class="product-card__body">
-                    <h3 class="product-card__name">Суфле междувагонных соединений</h3>
-                    <ul class="product-card__description">
-                      <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
-                      <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
-                      <li><strong>Вес:</strong> 2х55кг</li>
-                      <li><strong>Страна-производитель:</strong> Россия</li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog__pagination">
-            <div class="pagination" aria-label="Page navigation"><a class="pagination__item" href="/1">1</a><span class="pagination__item">...</span><a class="pagination__item" href="/4">4</a><a class="pagination__item  pagination--active" href="/5">5</a><a class="pagination__item" href="/6">6</a><span class="pagination__item">...</span><a class="pagination__item" href="/999">999</a></div>
-          </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
@@ -386,28 +378,13 @@
           <div class="page-footer__box"><a class="logo" href="/"><img src="img/logo.svg"></a>
             <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="/">Главная страница</a></li>
-                <li class="main-nav__item  main-nav__item--active  main-nav__item--has-child"><a class="main-nav__link" href="/pages">Страницы</a>
-                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list  main-nav__list--lvl-2">
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/about">О компании</a></li>
-                      <li class="main-nav__item  main-nav__item--has-child  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/services">Услуги</a>
-                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-                          <ul class="main-nav__list  main-nav__list--lvl-3">
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/serve">Вёрстка</a></li>
-                            <li class="main-nav__item  main-nav__item--lvl-3"><a class="main-nav__link  main-nav__link--lvl-3" href="pages/services/strip">Стриптиз</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="main-nav__item  main-nav__item--lvl-2"><a class="main-nav__link  main-nav__link--lvl-2" href="pages/some">Ещё одна страница</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="https://github.com/nicothin/NTH-start-project">Репозиторий</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="http://nicothin.pro/">Контакты автора</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
               </ul>
             </nav>
-            <div class="page-footer__right"><a class="btn" href="">Добавить объявление</a><a class="btn" href="">Добавить магазин</a></div>
+            <div class="page-footer__btn"><button class="btn">Добавить объявление</button><button class="btn">Добавить магазин</button></div>
           </div>
           <div class="page-footer__copyright">
             <p>Разработка сайта - <a href="http://www.2showbiz.ru">Showbiz Studio</a></p>
