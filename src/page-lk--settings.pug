@@ -14,78 +14,79 @@ block header
     +main-nav('10')
 
 block content
-  div.lk-section
-    .lk-section__sidebar-col
-      .lk-sidebar
-        ul.menu.menu--sidebar
-          li.menu__item
-            a.menu__link(href='/') Мои объявления
-          li.menu__item.menu__item--active
-            a.menu__link(href='/') Сообщения
-          li.menu__item
-            a.menu__link(href='/') Настройки
+  main.page__main-content(role="main")
+    div.lk-section
+      .lk-section__sidebar-col
+        .lk-sidebar
+          ul.menu.menu--sidebar
+            li.menu__item
+              a.menu__link(href='/') Мои объявления
+            li.menu__item.menu__item--active
+              a.menu__link(href='/') Сообщения
+            li.menu__item
+              a.menu__link(href='/') Настройки
 
-    .lk-section__main-col
-      .lk-main
-        .lk-main__header
-          h2.lk-main__title Контактная информация
+      .lk-section__main-col
+        .lk-main
+          .lk-main__header
+            h2.lk-main__title Контактная информация
 
-        .lk-main__body
-          .lk-settings
-            .lk-settings__part
-              form.form.form--settings
-                label.field-text
-                  span.field-text__name Имя
-                  span.field-text__input-wrap
-                    input.field-text__input(type='text', value='', placeholder='Евгений')
-                label.field-text
-                  span.field-text__name Город
-                  span.field-text__input-wrap
-                    input.field-text__input(type='text', value='', placeholder='Москва')
-                .field-actions
-                  button.btn Сохранить
+          .lk-main__body
+            .lk-settings
+              .lk-settings__part
+                form.form.form--settings
+                  label.field-text
+                    span.field-text__name Имя
+                    span.field-text__input-wrap
+                      input.field-text__input(type='text', value='', placeholder='Евгений')
+                  label.field-text
+                    span.field-text__name Город
+                    span.field-text__input-wrap
+                      input.field-text__input(type='text', value='', placeholder='Москва')
+                  .field-actions
+                    button.btn Сохранить
 
-            .lk-settings__part
-              form.form.form--settings
-                label.field-text
-                  span.field-text__name Телефон
-                  span.field-text__input-wrap
-                    input.field-text__input(type='tel', value='', placeholder='+7 (910) 310-11-11')
-                label.field-text
-                  span.field-text__name Email
-                  span.field-text__input-wrap
-                    input.field-text__input(type='email', value='', placeholder='loco@yandex.ru')
-                .field-checkbox
-                  .field-checkbox__input-wrap
-                    label.field-checkbox__name
-                      input.field-checkbox__input(type='checkbox', name='check0')
-                      span.field-checkbox__name-text Присылать уведомления на электронную почту
-                .field-actions
-                  button.btn Сохранить
+              .lk-settings__part
+                form.form.form--settings
+                  label.field-text
+                    span.field-text__name Телефон
+                    span.field-text__input-wrap
+                      input.field-text__input(type='tel', value='', placeholder='+7 (910) 310-11-11')
+                  label.field-text
+                    span.field-text__name Email
+                    span.field-text__input-wrap
+                      input.field-text__input(type='email', value='', placeholder='loco@yandex.ru')
+                  .field-checkbox
+                    .field-checkbox__input-wrap
+                      label.field-checkbox__name
+                        input.field-checkbox__input(type='checkbox', name='check0')
+                        span.field-checkbox__name-text Присылать уведомления на электронную почту
+                  .field-actions
+                    button.btn Сохранить
 
-            .lk-settings__part
-              h2.lk-settings__title Смена пароля
-              form.form.form--settings
-                label.field-text
-                  span.field-text__name Текущий
-                  span.field-text__input-wrap
-                    input.field-text__input(type='text', value='', placeholder='')
-                label.field-text
-                  span.field-text__name Новый
-                  span.field-text__input-wrap
-                    input.field-text__input(type='text', value='', placeholder='')
-                label.field-text
-                  span.field-text__name Повторите пароль
-                  span.field-text__input-wrap
-                    input.field-text__input(type='text', value='', placeholder='')
-                .field-actions
-                  button.btn Сохранить
+              .lk-settings__part
+                h2.lk-settings__title Смена пароля
+                form.form.form--settings
+                  label.field-text
+                    span.field-text__name Текущий
+                    span.field-text__input-wrap
+                      input.field-text__input(type='text', value='', placeholder='')
+                  label.field-text
+                    span.field-text__name Новый
+                    span.field-text__input-wrap
+                      input.field-text__input(type='text', value='', placeholder='')
+                  label.field-text
+                    span.field-text__name Повторите пароль
+                    span.field-text__input-wrap
+                      input.field-text__input(type='text', value='', placeholder='')
+                  .field-actions
+                    button.btn Сохранить
 
-            .lk-settings__part
-              h2.lk-settings__title Удаление учетной записи
-              p Если вы хотите навсегда идалить свою учетную запись и все свои объявления, то нажмите на кнопку «Удаление учетной записи»
+              .lk-settings__part
+                h2.lk-settings__title Удаление учетной записи
+                p Если вы хотите навсегда идалить свою учетную запись и все свои объявления, то нажмите на кнопку «Удаление учетной записи»
 
-        .lk-main__footer
+          .lk-main__footer
 
 block footer
   +page-footer()
