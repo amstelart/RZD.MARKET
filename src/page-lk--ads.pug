@@ -9,9 +9,6 @@ block meta
 
 block header
   +page-header()
-    +logo('/')
-      img(src="img/logo.svg")
-    +main-nav('10')
 
 block content
   main.page__main-content(role="main")
@@ -111,18 +108,13 @@ block content
           .lk-main__footer
             +pagination()
               +pagination-item('1', '/1')
-              +pagination-item('...')
               +pagination-item('4', '/4')
               +pagination-item('5', '/5', true)
               +pagination-item('6', '/6')
-              +pagination-item('...')
               +pagination-item('999', '/999')
 
 block footer
   +page-footer()
-    +logo('/')
-      img(src='img/logo.svg')
-    +main-nav('10')
 
 //- block page-bottom
 //-   script(src="js/some.js")

@@ -75,8 +75,8 @@ $border-color:                hsl(0, 0%, 60%) !default;
       display: inline-block;
       vertical-align: middle;
 
-      &:not(:first-child) {
-        margin-left: 2rem;
+      &:not(:last-child) {
+        margin-right: 1.5rem;
       }
 
       &--active {
@@ -102,6 +102,10 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
   &--lk-card {
     font-size: 12px;
+
+    @media (max-width: ($screen-sm - 1)) {
+      font-size: 10px;
+    }
 
     #{$block-name}__item {
 

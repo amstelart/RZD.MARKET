@@ -14,10 +14,15 @@
 
   .logo {
     max-width: 180px;
+
+    @media (max-width: ($screen-md - 1)) {
+      margin: auto;
+    }
   }
 
   &__box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 35px;
@@ -30,6 +35,10 @@
     .btn + .btn {
       margin-left: 20px;
     }
+
+    @media (max-width: ($screen-md - 1)) {
+      display: none;
+    }
   }
 
   &__copyright {
@@ -41,6 +50,10 @@
     a {
       color: #8d8d8d;
       text-decoration: none;
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      text-align: center;
     }
   }
 }

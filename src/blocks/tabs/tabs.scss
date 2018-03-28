@@ -127,14 +127,6 @@ $field-padding-horizontal:    0.7em !default;
       &:after {
         display: none;
       }
-
-      .btn-group {
-        display: flex;
-        flex-grow: 1;
-        padding: 0 30px;
-        align-items: center;
-        justify-content: space-between;
-      }
     }
 
     #{$block-name}__link {
@@ -149,6 +141,8 @@ $field-padding-horizontal:    0.7em !default;
 
     #{$block-name}__link-wrap {
       border: none;
+      margin: 0;
+      flex-grow: 1;
 
       &--active {
 

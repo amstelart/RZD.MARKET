@@ -12,10 +12,20 @@
   border: 1px solid #a2a2a2;
   border-radius: 0.35714rem;
 
+  @media (max-width: ($screen-md - 1)) {
+    flex-direction: column;
+  }
+
   &__image {
     max-width: 340px;
     flex-shrink: 0;
     margin-right: 30px;
+
+    @media (max-width: ($screen-md - 1)) {
+      max-width: 100%;
+      min-width: 100%;
+      margin-bottom: 10px;
+    }
 
     .thumb {
       border: none;
@@ -30,9 +40,14 @@
   &__header {
     border-bottom: 1px solid #e0e0e0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-bottom: 15px;
     margin-bottom: 15px;
+
+    .btn {
+      margin-top: 10px;
+    }
   }
 
   &__header-inner {
@@ -109,6 +124,7 @@
   &__contacts {
     @include col();
     @include col(lg, 5);
+    margin-bottom: 10px;
   }
 
   &__info {

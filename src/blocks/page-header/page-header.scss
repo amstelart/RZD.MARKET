@@ -18,24 +18,64 @@
 
   &__box {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 35px;
     padding-bottom: 30px;
     align-items: flex-end;
+
+    @media (max-width: ($screen-md - 1)) {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .main-nav {
+      margin-left: 15px;
+      margin-right: 25px;
+
+      @media (max-width: ($menu-desktop-width - 1)) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
 
   &__right {
     display: flex;
-    margin-left: 20px;
     flex-grow: 1;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media (max-width: ($screen-xl - 1)) {
+      margin-top: 20px;
+
+      .page-header__search {
+        flex-grow: 1;
+      }
+    }
+
+    .login {
+      margin-left: 20px;
+    }
   }
 
   &__btn {
     padding-bottom: 20px;
 
+    @media (max-width: ($screen-md - 1)) {
+      display: flex;
+
+      .btn {
+        font-size: 12px;
+        flex-basis: 50%;
+      }
+    }
+
     .btn + .btn {
       margin-left: 20px;
+
+      @media (max-width: ($screen-md - 1)) {
+        margin-left: 10px;
+      }
     }
   }
 }

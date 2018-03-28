@@ -12,6 +12,10 @@
   &__main-col {
     @include col();
     @include col(lg, 9);
+
+    @media (max-width: ($screen-lg - 1)) {
+      margin-bottom: 20px;
+    }
   }
 
   &__sidebar-col {

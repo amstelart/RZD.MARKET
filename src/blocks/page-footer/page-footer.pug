@@ -20,7 +20,18 @@ mixin page-footer(mods)
   footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)
     .page-footer__inner
       .page-footer__box
-        block
+        +logo('/')
+          img(src='img/logo.svg')
+        nav.main-nav
+          ul.main-nav__list
+            li.main-nav__item
+              a.main-nav__link(href='page-about.html') О компании
+            li.main-nav__item.main-nav__item--active
+              a.main-nav__link(href='page-forum.html') Форум
+            li.main-nav__item
+              a.main-nav__link(href='page-shops.html') Магазин
+            li.main-nav__item
+              a.main-nav__link(href='page-contacts.html') Контакты
         .page-footer__btn
           button.btn Добавить объявление
           button.btn Добавить магазин

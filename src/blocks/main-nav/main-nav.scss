@@ -11,7 +11,7 @@ $screen-lg:                   992px !default;
 $screen-xl:                   1200px !default;
 $screen-xxl:                  1800px !default;
 
-$menu-desktop-width:          $screen-lg !default;
+$menu-desktop-width:          $screen-md;
 $toggler-part-height:         3px !default;
 $toggler-part-bg-color:       #000 !default;
 
@@ -23,6 +23,10 @@ $transition-time:             0.3s !default;
 
   position: relative;
   z-index: 10;
+
+  @media (max-width: ($menu-desktop-width - 1)) {
+    min-width: 100%;
+  }
 
   // первый уровень
   &__list {
@@ -38,12 +42,16 @@ $transition-time:             0.3s !default;
       .js & {
         overflow: hidden;
         max-height: 0;
+        margin-top: 0;
         transition: max-height 0.2s;
+        transition: margin-top 0.2s;
       }
 
       .js #{$block-name}--open & {
         max-height: 100vh;
+        margin-top: 20px;
         transition: max-height 0.6s;
+        transition: margin-top 0.6s;
       }
     }
 
@@ -70,6 +78,12 @@ $transition-time:             0.3s !default;
   &__item {
     position: relative;
 
+    @media (max-width: ($menu-desktop-width - 1)) {
+      &:not(:first-child) {
+        border-top: 1px solid #e6e6e6;
+      }
+    }
+
     &--active {
 
       & > #{$block-name}__link {
@@ -87,6 +101,14 @@ $transition-time:             0.3s !default;
     &:hover,
     &:focus {
       text-decoration: underline;
+    }
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+      background-color: #fafafa;
+
+      &:not(:first-child) {
+        border-top: 1px solid #ccc;
+      }
     }
 
     &--lvl-2 {
@@ -162,6 +184,8 @@ $transition-time:             0.3s !default;
     padding: 0;
     background: none;
     border: none;
+    margin-left: auto;
+    outline: none;
 
     .no-js & {
       display: none;
