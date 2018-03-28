@@ -368,7 +368,23 @@
 <code>        a(href='#')</code>
 <code>          img(src="img/top-banner.jpg")</code>
 <code>      .page-header__box</code>
-<code>        block</code>
+<code>        +logo('/')</code>
+<code>          img(src="img/logo.svg")</code>
+<code>&nbsp;</code>
+<code>        button.burger.main-nav__toggler(aria-label='Показать главное меню', data-target-id='nav', data-target-class-toggle='main-nav--open')</code>
+<code>          span Показать главное меню</code>
+<code>&nbsp;</code>
+<code>        nav#nav.main-nav</code>
+<code>          ul.main-nav__list</code>
+<code>            li.main-nav__item</code>
+<code>              a.main-nav__link(href='page-about.html') О компании</code>
+<code>            li.main-nav__item.main-nav__item--active</code>
+<code>              a.main-nav__link(href='page-forum.html') Форум</code>
+<code>            li.main-nav__item</code>
+<code>              a.main-nav__link(href='page-shops.html') Магазин</code>
+<code>            li.main-nav__item</code>
+<code>              a.main-nav__link(href='page-contacts.html') Контакты</code>
+<code>&nbsp;</code>
 <code>        .page-header__right</code>
 <code>          form.search-form.page-header__search</code>
 <code>            label.field-text</code>
@@ -380,6 +396,7 @@
 <code>          .login</code>
 <code>            a(href="page-login.html").login__sign-in Вход</code>
 <code>            a(href="page-registration-user.html").login__reg Регистрация</code>
+<code>&nbsp;</code>
 <code>      .page-header__btn</code>
 <code>        button.btn Добавить объявление</code>
 <code>        button.btn Добавить магазин</code>
@@ -423,7 +440,18 @@
 <code>  footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)</code>
 <code>    .page-footer__inner</code>
 <code>      .page-footer__box</code>
-<code>        block</code>
+<code>        +logo('/')</code>
+<code>          img(src='img/logo.svg')</code>
+<code>        nav.main-nav</code>
+<code>          ul.main-nav__list</code>
+<code>            li.main-nav__item</code>
+<code>              a.main-nav__link(href='page-about.html') О компании</code>
+<code>            li.main-nav__item.main-nav__item--active</code>
+<code>              a.main-nav__link(href='page-forum.html') Форум</code>
+<code>            li.main-nav__item</code>
+<code>              a.main-nav__link(href='page-shops.html') Магазин</code>
+<code>            li.main-nav__item</code>
+<code>              a.main-nav__link(href='page-contacts.html') Контакты</code>
 <code>        .page-footer__btn</code>
 <code>          button.btn Добавить объявление</code>
 <code>          button.btn Добавить магазин</code>
