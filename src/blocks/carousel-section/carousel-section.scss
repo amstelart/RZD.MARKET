@@ -1,8 +1,17 @@
-// В этом файле должны быть стили для БЭМ-блока carousel-section, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока carousel-section, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .carousel-section {
 
   $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
 }

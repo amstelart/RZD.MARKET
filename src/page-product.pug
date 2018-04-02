@@ -19,7 +19,7 @@ block content
           .product
             .product__header
               .product__header-inner
-                .product__title Локо сбыт
+                .product__title Суфле междувагонных соединений
                 .product__actions
                   button.btn.active
                     i.fa.fa-heart(aria-hidden='true')
@@ -33,14 +33,26 @@ block content
                     |  150 (9 сегодня)
               .product__header-cost
                 .product__cost 152 555
+                  i.fa.fa-rub
             .product__contacts
               .product__shop-name
-                | Магазин: Лого Сбыт
+                | Магазин: <span>Лого Сбыт</span>
               .product__shop-phone
                 | +7 (911) 11-22-33
               .product__shop-feedback
                 button.btn Написать
-            .product__gallegy
+
+            .product__gallery
+              .product-slider.owl-carousel(data-slider-id='1')
+                div
+                  img(src="img/product-demo-image-2.jpg")
+                div
+                  img(src="img/product-demo-image-2.jpg")
+                div
+                  img(src="img/product-demo-image-2.jpg")
+                div
+                  img(src="img/product-demo-image-2.jpg")
+
             .product__info
               .product__info-description
                 h4 Контактные данные

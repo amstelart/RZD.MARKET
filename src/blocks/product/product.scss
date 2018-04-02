@@ -12,28 +12,100 @@
   border-radius: 0.35714rem;
 
   &__header {
-    border-bottom: 1px solid #a2a2a2;
+    border-bottom: 1px solid #e0e0e0;
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    .btn {
+      margin-top: 10px;
+    }
   }
+
   &__header-inner {
     flex-grow: 1;
   }
+
   &__title {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 24px;
+    margin-bottom: 10px;
   }
-  &__actions {}
-  &__mata {}
+
+  &__actions {
+
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle;
+
+    .btn {
+      padding: 0;
+      color: #7f7b7b;
+      background: #fff;
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+
+      &:not(:first-child) {
+        margin-left: 5px;
+      }
+
+      &.active {
+        color: #ff0000;
+      }
+    }
+  }
+
+  &__meta {
+    color: #7f7b7b;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 12px;
+
+    span {
+      vertical-align: middle;
+
+      &:not(:first-child) {
+        margin-left: 1.4rem;
+      }
+    }
+  }
+
   &__header-cost {
     font-size: 24px;
+
+    .fa {
+      font-size: 18px;
+      margin-left: 8px;
+    }
   }
+
   &__contacts {
     padding: 20px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
-  &__gallery {}
+  &__shop-name {
+    margin-right: auto;
+
+    span {
+      color: #000;
+    }
+  }
+
+  &__shop-phone {
+    margin-right: 60px;
+  }
+
+  &__gallery {
+    margin-bottom: 30px;
+  }
+
   &__info {
     @include row;
 

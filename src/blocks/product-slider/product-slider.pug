@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (product-slider)
+
+mixin product-slider(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +product-slider('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' product-slider--' + modsList[i].trim();
+      }
+    }
+
+  .product-slider(class=allMods)&attributes(attributes)
+    .product-slider__inner!= text
