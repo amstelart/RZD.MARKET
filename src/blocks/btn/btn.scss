@@ -67,6 +67,10 @@ $border-radius:               rem(3px) !default;
     }
   }
 
+
+  &--block {
+    width: 100%;
+  }
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;

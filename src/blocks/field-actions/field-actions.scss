@@ -12,7 +12,7 @@ $line-height:                 1.5 !default;
 
   $block-name:                &; // #{$block-name}__element
 
-  display: block;
+  display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
 
@@ -23,5 +23,20 @@ $line-height:                 1.5 !default;
     font-size: $font-size--small;
     color: $text-color--muted;
     line-height: 1.2em;
+  }
+
+  &--inline {
+    display: flex;
+     align-items: center;
+
+    #{$block-name}__text {
+      font-size: 14px;
+      color: #000;
+      flex-grow: 1;
+    }
+
+    .btn {
+      width: auto !important;
+    }
   }
 }

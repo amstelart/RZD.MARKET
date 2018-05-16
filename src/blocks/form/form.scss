@@ -83,8 +83,8 @@ $line-height:                 1.5 !default;
 
   &--login {
 
-    .btn {
-      width: 100%;
+    textarea {
+      min-height: 160px;
     }
 
     .field-radio {

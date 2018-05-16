@@ -31,24 +31,19 @@ block content
               label.field-radio__name
                 input.field-radio__input(type='radio', name='radio')
                 span.field-radio__name-text Покупатель
-
+          hr
+          .field-actions.field-actions--inline
+            .field-actions__text
+              | Добавить описание магазина
+            button.btn Выбрать
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Имя', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Email', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Номер телефона', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Пароль', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Подтвердить пароль', name='comment')
+              textarea.field-text__input(type='text', placeholder='Описание магазина', name='comment')
+          div.field-map
+            div.field-map__wrap
+              script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb71ddad19b2b8a00a07488f67e1ed6c95470cae72d8219caba0581b6110d06c&width=100%25&height=240&lang=ru_RU&scroll=false')
           .field-actions
-            button.btn.btn-block Зарегистрироваться
+            button.btn.btn--block Зарегистрироваться
       .login-section__footer
         p
           | Нажимая «Зарегистрироваться», вы принимаете условия

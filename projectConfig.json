@@ -94,7 +94,9 @@
     "search-form": [],
     "field-search": [],
     "login": [],
-    "product-slider": []
+    "product-slider": [],
+    "field-map": [],
+    "field-photo": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

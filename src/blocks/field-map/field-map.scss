@@ -1,0 +1,14 @@
+// В этом файле должны быть стили для БЭМ-блока field-map, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.field-map {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrap {
+    border: 1px solid #a2a2a2;
+    border-radius: 0.35714rem;
+    overflow: hidden;
+  }
+}

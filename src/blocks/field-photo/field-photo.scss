@@ -1,0 +1,54 @@
+// В этом файле должны быть стили для БЭМ-блока field-photo, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.field-photo {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: ($screen-sm - 1)) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    #{$block-name}__avatar {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__name {
+    flex-shrink: 0;
+    min-width: 165px;
+    font-weight: 400;
+    color: #7f7b7b;
+    margin-bottom: 0.4em;
+    line-height: 1.5;
+  }
+
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    background: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      font-family: "object-fit:cover";
+      object-fit: cover;
+    }
+  }
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+  }
+}
