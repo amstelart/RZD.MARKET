@@ -50,7 +50,7 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page-header__inner">
-          <div class="page-header__banner"><a href="#"><img src="img/top-banner.jpg"/></a></div>
+          <div class="page-header__banner"><a href="#"><img src="img/top-banner.jpg" width="100px" height="100px"/></a></div>
           <div class="page-header__box"><a class="logo" href="/"><img src="img/logo.svg"/></a><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
             <nav class="main-nav" id="nav">
               <ul class="main-nav__list">
@@ -87,7 +87,9 @@
               <div class="lk-main__body">
                 <div class="lk-settings">
                   <div class="lk-settings__part">
-                    <form class="form form--settings"><label class="field-text"><span class="field-text__name">Имя</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder="Евгений"></span></label><label class="field-text"><span class="field-text__name">Город</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder="Москва"></span></label>
+                    <form class="form form--settings">
+                      <div class="field-photo"><span class="field-photo__name">Фотография</span>
+                        <div class="field-photo__avatar"><img src="img/avatar.png"></div><a class="field-photo__link" href="#">Редактировать</a></div><label class="field-text"><span class="field-text__name">Имя</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder="Евгений"></span></label><label class="field-text"><span class="field-text__name">Город</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" placeholder="Москва"></span></label>
                       <div class="field-actions"><button class="btn">Сохранить</button></div>
                     </form>
                   </div>
@@ -107,8 +109,7 @@
                   </div>
                   <div class="lk-settings__part">
                     <h2 class="lk-settings__title">Удаление учетной записи</h2>
-                    <p>Если вы хотите навсегда идалить свою учетную запись и все свои объявления, то нажмите на кнопку «Удаление учетной записи»</p>
-                  </div>
+                    <p>Если вы хотите навсегда идалить свою учетную запись и все свои объявления, то нажмите на кнопку «Удаление учетной записи»</p><button class="btn">Удалить</button></div>
                 </div>
               </div>
               <div class="lk-main__footer"></div>
