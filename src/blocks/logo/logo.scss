@@ -9,9 +9,10 @@
   display: inline-block;
   white-space: nowrap;
   flex-shrink: 0;
+  max-width: 200px;
 
   @media (max-width: ($screen-md - 1)) {
-    max-width: 240px;
+    max-width: 200px;
   }
 
   img {

@@ -1,0 +1,140 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+
+block content
+  
+  .page__part.gray
+    main.page__main-content(role="main")  
+      .page-box.page-box--md
+        .add-advert
+          .add-advert__part
+            h2.add-advert__title Добавить объявление
+            form.form.add-advert__form
+              .field-radio.field-radio--inline.field-radio--buttons
+                .field-radio__title(style="min-width:200px;") Добавить объявление как:
+                .field-radio__input-wrap
+                  label.field-radio__name
+                    input.field-radio__input(type='radio', name='radio', checked='checked')
+                    span.field-radio__name-text Частное лицо
+                .field-radio__input-wrap
+                  label.field-radio__name
+                    input.field-radio__input(type='radio', name='radio')
+                    span.field-radio__name-text Магазин
+              label.field-text.field-text--inline
+                span.field-text__name Выберите категорию:
+                span.field-text__input-wrap
+                  input.field-text__input(type='text', placeholder='Категория')
+              label.field-text.field-text--inline
+                span.field-text__name Местоположение:
+                span.field-text__input-wrap
+                  input.field-text__input(type='text', placeholder='Ж/Д полигон')
+              .field-actions.field-actions--inline
+                .field-actions__text
+                p
+                  button.btn Сохранить
+
+          hr.page-box__hr
+
+          .add-advert__part
+            form.form.add-advert__form
+              label.field-text.field-text--inline
+                span.field-text__name Описание товара:
+                span.field-text__input-wrap
+                  textarea.field-text__input(name='comment', placeholder='Введите текст')
+              label.field-text.field-text--inline
+                span.field-text__name Комментарий продавца:
+                span.field-text__input-wrap
+                  textarea.field-text__input(name='comment', placeholder='Введите текст')
+              label.field-text.field-text--inline
+                span.field-text__name Цена:
+                span.field-text__input-wrap.field-text__input-wrap--sm
+                  input.field-text__input(type='text', value='5700')
+                span.field-text__help-text руб
+
+              .field-file.field-file--inline
+                .field-file__name Название
+                label.field-file__input-wrap
+                  input.field-file__input(type='file', data-multiple-caption='Выбрано файлов: {count}', name='commentFile', multiple='multiple')
+                  .field-file__name-text(data-button-text='+') Ничего не выбрано
+
+              .field-radio.field-radio--inline.field-radio--buttons
+                .field-radio__title Тип товара:
+                .field-radio__input-wrap
+                  label.field-radio__name
+                    input.field-radio__input(type='radio', name='radio', checked='checked')
+                    span.field-radio__name-text Новый
+                .field-radio__input-wrap
+                  label.field-radio__name
+                    input.field-radio__input(type='radio', name='radio')
+                    span.field-radio__name-text Б/У
+                
+              .field-actions.field-actions--inline
+                .field-actions__text
+                p
+                  button.btn Сохранить
+
+          hr.page-box__hr
+
+          .add-advert__part
+            h2.add-advert__title Контактная информация
+            form.form.add-advert__form
+              label.field-text.field-text--inline
+                span.field-text__name Ваше имя:
+                span.field-text__input-wrap
+                  input.field-text__input(type='text', value='Евгений')
+              label.field-text.field-text--inline
+                span.field-text__name Ваш телефон:
+                span.field-text__input-wrap
+                  input.field-text__input(type='tel', value='+7-920-212-21-51')
+              label.field-text.field-text--inline
+                span.field-text__name Ваш E-mail:
+                span.field-text__input-wrap
+                  input.field-text__input(type='email', value='test@e-mail.ru')
+              .field-actions.field-actions--inline
+                .field-actions__text
+                p
+                  button.btn Сохранить
+
+          hr.page-box__hr
+
+          .add-advert__part
+            h2.add-advert__title Выберите услуги
+            form.form.add-advert__form
+              .field-radio.field-radio--buttons.field-radio--buttons-xl
+                .field-radio__input-wrap
+                  label.field-radio__name
+                    input.field-radio__input(type='radio', name='radio', checked='checked')
+                    span.field-radio__name-text Услуга №1
+                .field-radio__input-wrap
+                  label.field-radio__name
+                    input.field-radio__input(type='radio', name='radio')
+                    span.field-radio__name-text Услуга №2
+                .field-radio__input-wrap
+                  label.field-radio__name
+                    input.field-radio__input(type='radio', name='radio')
+                    span.field-radio__name-text Услуга №3
+              .add-advert__description
+                | Описание услуги
+
+          .add-advert__part.add-advert__part--action
+            .add-advert__cost
+              | Цена: 530 руб.
+            .add-advert__btn-group
+              button.btn Подать объявление
+              button.btn Выписать счет
+            
+
+block footer
+  +page-footer()
+
+//- block page-bottom
+//-   script(src="js/some.js")

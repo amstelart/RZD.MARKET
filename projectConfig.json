@@ -96,7 +96,10 @@
     "login": [],
     "product-slider": [],
     "field-map": [],
-    "field-photo": []
+    "field-photo": [],
+    "result-search": [],
+    "page-box": [],
+    "add-advert": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

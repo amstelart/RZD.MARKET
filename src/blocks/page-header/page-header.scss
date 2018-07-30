@@ -14,6 +14,14 @@
 
   &__banner {
     padding-top: 10px;
+
+    a {
+      display: block;
+
+      img {
+        display: block;
+      }
+    }
   }
 
   &__box {
@@ -21,7 +29,11 @@
     flex-wrap: wrap;
     padding-top: 35px;
     padding-bottom: 30px;
-    align-items: flex-end;
+    align-items: center;
+
+    .logo {
+      margin-right: 75px;
+    }
 
     @media (max-width: ($screen-md - 1)) {
       padding-top: 10px;
@@ -39,11 +51,20 @@
     }
   }
 
+  &__search {
+    flex-grow: 1;
+    max-width: 265px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      max-width: inherit;
+    }
+  }
+
   &__right {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
     @media (max-width: ($screen-xl - 1)) {
       margin-top: 20px;

@@ -1,0 +1,31 @@
+// В этом файле должны быть стили для БЭМ-блока result-search, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.result-search {
+
+  $block-name:                &; // #{$block-name}__element
+
+
+  &__form {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    color: #686868;
+
+    span {
+      color: #000;
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+
+}

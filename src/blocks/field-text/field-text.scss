@@ -103,4 +103,34 @@ $border-radius:               rem(3px) !default;
   &__help-text {
     @include field-help-text;
   }
+
+  &--inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    #{$block-name}__name {
+      min-width: 167px;
+      flex-shrink: 0;
+      color: #7f7b7b;
+      font-weight: 400;
+      margin-top: 0.4em;
+    }
+
+    #{$block-name}__input-wrap {
+      flex-grow: 1;
+
+      &--sm {
+        flex-grow: 0;
+        max-width: 100px;
+      }
+    }
+
+    #{$block-name}__help-text {
+      align-self: center;
+      font-size: 14px;
+      color: #7f7b7b;
+      margin-left: 10px;
+    }
+  }
 }

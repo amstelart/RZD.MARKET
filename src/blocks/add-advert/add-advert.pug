@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (add-advert)
+
+mixin add-advert(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +add-advert('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' add-advert--' + modsList[i].trim();
+      }
+    }
+
+  .add-advert(class=allMods)&attributes(attributes)
+    .add-advert__inner!= text

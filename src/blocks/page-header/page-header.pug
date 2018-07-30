@@ -21,10 +21,10 @@ mixin page-header(mods)
     .page-header__inner
       .page-header__banner
         a(href='#')
-          img(src="img/top-banner.jpg", width="100px", height="100px")
+          img(src="img/top-banner.jpg")
       .page-header__box
         +logo('/')
-          img(src="img/logo.svg")
+          img(src="img/logo.png")
 
         button.burger.main-nav__toggler(aria-label='Показать главное меню', data-target-id='nav', data-target-class-toggle='main-nav--open')
           span Показать главное меню
@@ -53,5 +53,5 @@ mixin page-header(mods)
             a(href="page-registration-user.html").login__reg Регистрация
 
       .page-header__btn
-        button.btn Добавить объявление
-        button.btn Добавить магазин
+        a(href="page-tovar-add.html").btn Добавить объявление
+        a(href="page-tovar-add.html").btn Добавить магазин

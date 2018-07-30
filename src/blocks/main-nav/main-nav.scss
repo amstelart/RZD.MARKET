@@ -61,7 +61,7 @@ $transition-time:             0.3s !default;
       flex-wrap: wrap;
 
       #{$block-name}__link {
-        padding: 0.5em 1em 0 1em;
+        padding: 0.5em 1em;
         line-height: 1;
       }
 
@@ -87,7 +87,7 @@ $transition-time:             0.3s !default;
     &--active {
 
       & > #{$block-name}__link {
-        color: #000;
+        color: #ff0000;
       }
     }
   }
@@ -97,10 +97,12 @@ $transition-time:             0.3s !default;
     padding: 0.5em 1em;
     text-decoration: none;
     background-color: #fff;
+    color: #000;
 
     &:hover,
     &:focus {
       text-decoration: underline;
+      color: #ff0000;
     }
 
     @media (max-width: ($menu-desktop-width - 1)) {

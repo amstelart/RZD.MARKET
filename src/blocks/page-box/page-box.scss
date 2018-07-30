@@ -1,0 +1,22 @@
+// В этом файле должны быть стили для БЭМ-блока page-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #a2a2a2;
+  border-radius: 0.35714rem;
+
+  &--md {
+    max-width: 850px;
+  }
+
+  &__hr {
+    border-color: #e0e0e0;
+  }
+
+}

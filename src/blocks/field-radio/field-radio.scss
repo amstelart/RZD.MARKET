@@ -116,4 +116,111 @@ $line-height:                 1.5 !default;
   &__help-text {
     @include field-help-text;
   }
+
+  &--buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    #{$block-name}__input-wrap {
+
+      & + .field-radio__input-wrap {
+        margin-top: 0;
+        margin-left: 15px;
+      }
+
+      @media (max-width: ($screen-sm - 1)) {
+
+        #{$block-name}__name,
+        #{$block-name}__name-text {
+          min-width: 100%;  
+        }
+
+        min-width: 100%;
+
+        & + .field-radio__input-wrap {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    #{$block-name}__name {
+      padding: 0;
+      margin: 0;
+    }
+
+    #{$block-name}__name-text {
+
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      padding: $field-padding-vertical  $field-padding-horizontal;
+      white-space: nowrap;
+      user-select: none;
+      text-align: center;
+      font-size: 1em;
+      font-family: inherit;
+      line-height: $line-height;
+      text-decoration: none;
+      text-transform: none;
+      color: $text-color;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      background: $gray-gradient;
+      cursor: pointer;
+      min-width: 120px;
+
+      @at-root input:checked ~ .field-radio__name-text {
+        opacity: 1;
+        border-color: red;
+        box-shadow: 0px 0px 0px 1px rgba(255,98,98,1);
+      }
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &--buttons-xl {
+    #{$block-name}__name-text {
+      padding: 1.3rem 2rem;
+    }
+  }
+
+  &--inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    #{$block-name}__title {
+      min-width: 167px;
+      flex-shrink: 0;
+      color: #7f7b7b;
+      font-weight: 400;
+      margin-top: 0.4em;
+
+      @media (max-width: ($screen-md - 1)) {
+        min-width: 100% !important;
+      }
+    }
+
+    // #{$block-name}__input-wrap {
+    //   flex-grow: 1;
+    //
+    //   &--sm {
+    //     flex-grow: 0;
+    //     max-width: 100px;
+    //   }
+    // }
+
+    // #{$block-name}__help-text {
+    //   align-self: center;
+    //   font-size: 14px;
+    //   color: #7f7b7b;
+    //   margin-left: 10px;
+    // }
+  }
 }

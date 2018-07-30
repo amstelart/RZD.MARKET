@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (page-box)
+
+mixin page-box(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +page-box('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' page-box--' + modsList[i].trim();
+      }
+    }
+
+  .page-box(class=allMods)&attributes(attributes)
+    .page-box__inner!= text

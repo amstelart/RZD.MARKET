@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (result-search)
+
+mixin result-search(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +result-search('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' result-search--' + modsList[i].trim();
+      }
+    }
+
+  .result-search(class=allMods)&attributes(attributes)
+    .result-search__inner!= text
