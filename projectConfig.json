@@ -99,7 +99,9 @@
     "field-photo": [],
     "result-search": [],
     "page-box": [],
-    "add-advert": []
+    "add-advert": [],
+    "b-reviews": [],
+    "reviews-feedback": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

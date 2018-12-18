@@ -14,47 +14,30 @@ block content
   div.login-section
     .login-section__inner
       .login-section__header
-        h1.login-section__title Регистрация
+        h1.login-section__title Создание магазина
       .login-section__body
         form.form.form--login
-
-          .field-radio
-            .field-radio__input-wrap
-              label.field-radio__name
-                input.field-radio__input(type='radio', name='radio', checked='checked')
-                span.field-radio__name-text Магазин
-            .field-radio__input-wrap
-              label.field-radio__name
-                input.field-radio__input(type='radio', name='radio')
-                span.field-radio__name-text Частное лицо
-            .field-radio__input-wrap
-              label.field-radio__name
-                input.field-radio__input(type='radio', name='radio')
-                span.field-radio__name-text Покупатель
-
           label.field-text
             span.field-text__input-wrap
               input.field-text__input(type='text', placeholder='Название магазина', name='comment')
+          .field-actions.field-actions--inline
+            .field-actions__text
+              | Добавить изображение магазина
+            button.btn Выбрать
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Контактное лицо', name='comment')
+              textarea.field-text__input(type='text', placeholder='Описание магазина', name='comment')
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Email', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Телефон', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Пароль', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Подтвердить пароль', name='comment')
+              input.field-text__input(type='text', placeholder='Адрес', name='comment')
+          div.field-map
+            div.field-map__wrap
+              script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb71ddad19b2b8a00a07488f67e1ed6c95470cae72d8219caba0581b6110d06c&width=100%25&height=240&lang=ru_RU&scroll=false')
+          h3.mt20 Цена: 10 000 руб.
+          p
+            | Пакет услуг включает в себя неограниченное количество объявлений; поднятие любых 5 объявлений в топ на 5 дней; оплачивается ежемесячно в размере 10 000 руб.
           .field-actions
-            button.btn Дальше
-      .login-section__footer
-        p
-          | Нажимая «Зарегистрироваться», вы принимаете условия <a href='#'>пользовательского соглашения</a>
+            button.btn.btn--block Оплатить и создать
 
 block footer
   +page-footer()

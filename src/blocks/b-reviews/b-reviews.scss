@@ -1,0 +1,121 @@
+// В этом файле должны быть стили для БЭМ-блока b-reviews, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.b-reviews {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {}
+
+  &__item {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card {
+    background: #fff;
+    padding: 20px 20px;
+    border: 1px solid #a2a2a2;
+    border-radius: 0.35714rem;
+    display: flex;
+  }
+
+  &__rating {
+
+    svg {
+      vertical-align: middle;
+    }
+
+    &--good {
+      svg {
+        fill: #00a200;
+      }
+    }
+    &--bed {
+      svg {
+        fill: #ff0000;
+      }
+    }
+
+    &--neutral {
+      svg {
+        fill: #7e807e;
+      }
+    }
+  }
+
+  &__card-image {
+    flex-shrink: 0;
+  }
+
+  &__card-caption {
+    padding-left: 30px;
+  }
+
+  &__card-header {
+    display: flex;
+    flex-wrap: wrap;
+
+    h3 {
+      flex-grow: 1;
+
+      span {
+        margin-left: 6px;
+      }
+    }
+
+    .reviews-time {
+      margin-left: auto;
+      color: #c3c3c3;
+    }
+  }
+
+  &__time {
+
+    margin-left: auto;
+    color: #c3c3c3;
+    font-size: 12px;
+
+    @media (max-width: ($screen-sm - 1)) {
+      flex-basis: 100%;
+      margin-left: inherit;
+    }
+  }
+
+  &__filter {
+    padding: 10px 0;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+
+        a {
+          color: #000;
+          text-decoration: none;
+
+          span {
+            margin-left: 5px;
+          }
+        }
+
+        &.active {
+          a {
+            color: #ff0000;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+}

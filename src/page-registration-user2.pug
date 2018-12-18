@@ -21,31 +21,22 @@ block content
           .field-radio
             .field-radio__input-wrap
               label.field-radio__name
-                input.field-radio__input(type='radio', name='radio', checked='checked')
+                input.field-radio__input(type='radio', name='radio')
                 span.field-radio__name-text Юридическое лицо
             .field-radio__input-wrap
               label.field-radio__name
-                input.field-radio__input(type='radio', name='radio')
+                input.field-radio__input(type='radio', name='radio', checked='checked')
                 span.field-radio__name-text Физическое лицо
 
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Название компании*', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Юридический адрес', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Физический адрес', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Контактное лицо*', name='comment')
-          label.field-text
-            span.field-text__input-wrap
-              input.field-text__input(type='tel', placeholder='Номер телефона', name='comment')
+              input.field-text__input(type='text', placeholder='Имя*', name='comment')
           label.field-text
             span.field-text__input-wrap
               input.field-text__input(type='email', placeholder='Email*', name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='tel', placeholder='Номер телефона*', name='comment')
           label.field-text
             span.field-text__input-wrap
               input.field-text__input(type='text', placeholder='Пароль*', name='comment')
@@ -53,8 +44,12 @@ block content
             span.field-text__input-wrap
               input.field-text__input(type='text', placeholder='Пароль еще раз*', name='comment')
           .field-actions
-            button.btn.btn--block Дальше
-              i.fa.fa-chevron-right.ml5
+            button.btn.btn--block Зарегистрироваться
+          .login-section__footer
+            p
+              | Нажимая «Зарегистрироваться», вы принимаете условия
+              br
+              | <a href='#'>пользовательского соглашения</a>
 
 block footer
   +page-footer()

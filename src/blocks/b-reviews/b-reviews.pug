@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (b-reviews)
+
+mixin b-reviews(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +b-reviews('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' b-reviews--' + modsList[i].trim();
+      }
+    }
+
+  .b-reviews(class=allMods)&attributes(attributes)
+    .b-reviews__inner!= text

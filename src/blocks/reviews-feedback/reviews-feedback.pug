@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (reviews-feedback)
+
+mixin reviews-feedback(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +reviews-feedback('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' reviews-feedback--' + modsList[i].trim();
+      }
+    }
+
+  .reviews-feedback(class=allMods)&attributes(attributes)
+    .reviews-feedback__inner!= text

@@ -45,9 +45,16 @@
     padding-bottom: 15px;
     margin-bottom: 15px;
 
-    .btn {
-      margin-top: 10px;
+    .btn-group {
+      .btn {
+        margin-top: 10px;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
     }
+
   }
 
   &__header-inner {
@@ -130,5 +137,47 @@
   &__info {
     @include col();
     @include col(lg, 7);
+  }
+
+  &__footer {
+
+  }
+
+  &__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    .item {
+
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
+
+      color: #939090;
+      i.fa {
+        margin-right: 5px;
+      }
+      span {
+        margin-right: 5px;
+      }
+    }
+
+    .stats-reviews {
+      display: inline-block;
+      a {
+        display: inline-block;
+        margin: 0 4px;
+      }
+      .pos {
+        color: #009500;
+      }
+      .ne {
+        color: #7e807e;
+      }
+      .neg {
+        color: #ff0000;
+      }
+    }
   }
 }

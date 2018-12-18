@@ -11,6 +11,17 @@ block header
   +page-header()
 
 block content
+  .page__part.white
+    .container
+      .alert.mt0(role="alert")
+        p
+          a.black-text(href="#") Имя пользователя
+          | , пришло время 
+          a(href="#") создать
+          |  свой «Магазин»! По правилам сайта пользователь сможет опубликовать больше 10 объявлений только в этой роли!
+        button.close.close--sm.alert__close(aria-label="Закрыть")
+          span Закрыть
+      
   main.page__main-content(role="main")
     div.lk-section
       .lk-section__sidebar-col

@@ -1,0 +1,115 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+
+block content
+  .page__part.white
+    main.page__main-content(role="main")
+      h3.section-title Отзывы
+      nav.b-reviews__filter
+        ul
+          li.active
+            a(href="#") Все
+             span 10
+          li
+            a(href="#") Положительные
+             span 5
+          li
+            a(href="#") Нейтральные
+             span 2
+          li
+            a(href="#") Отрицательные
+             span 3
+          
+      
+  .page__part.gray
+    main.page__main-content(role="main")
+      .b-reviews
+        .b-reviews__list
+          .b-reviews__item
+            .b-reviews__card
+              .b-reviews__card-image
+                img(src="img/reviews-photo.jpg")
+              .b-reviews__card-caption
+                .b-reviews__card-header
+                  h3 Зиборов Олег
+                    span.b-reviews__rating.b-reviews__rating--good
+                      svg(width="9", height="14")
+                        use(xlink:href="img/sprite-svg.svg#rating-good")
+                  span.b-reviews__time 26.06.2018
+                .b-reviews__card-text
+                  p Продавец полностью оправдал ожидания. Никаких неожиданностей и нестыковок и цена вполне приемлемая. Приятно работать с профессиоаналами!
+          .b-reviews__item
+            .b-reviews__card
+              .b-reviews__card-image
+                img(src="img/reviews-photo.jpg")
+              .b-reviews__card-caption
+                .b-reviews__card-header
+                  h3 Зиборов Олег
+                    span.b-reviews__rating.b-reviews__rating--bed
+                      svg(width="6", height="2")
+                        use(xlink:href="img/sprite-svg.svg#rating-bed")
+                  span.b-reviews__time 26.06.2018
+                .b-reviews__card-text
+                  p Продавец полностью оправдал ожидания. Никаких неожиданностей и нестыковок и цена вполне приемлемая. Приятно работать с профессиоаналами!
+          .b-reviews__item
+            .b-reviews__card
+              .b-reviews__card-image
+                img(src="img/reviews-photo.jpg")
+              .b-reviews__card-caption
+                .b-reviews__card-header
+                  h3 Зиборов Олег
+                    span.b-reviews__rating.b-reviews__rating--neutral
+                      svg(width="9", height="14")
+                        use(xlink:href="img/sprite-svg.svg#rating-neutral")
+                  span.b-reviews__time 26.06.2018
+                .b-reviews__card-text
+                  p Продавец полностью оправдал ожидания. Никаких неожиданностей и нестыковок и цена вполне приемлемая. Приятно работать с профессиоаналами!
+  .page__part.white.py30
+    .container
+      .reviews-feedback
+        .reviews-feedback__header
+          h2 Оставить отзыв
+        form.form.reviews-feedback__form
+          .field-radio.field-radio--inline
+            .field-radio__input-wrap
+              label.field-radio__name
+                input.field-radio__input(type='radio' name='radio' checked='checked')
+                span.field-radio__name-text Положительный
+            .field-radio__input-wrap
+              label.field-radio__name
+                input.field-radio__input(type='radio' name='radio')
+                span.field-radio__name-text Нейтральный
+            .field-radio__input-wrap
+              label.field-radio__name
+                input.field-radio__input(type='radio' name='radio')
+                span.field-radio__name-text Отрицательный
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text' placeholder='Имя' name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              input.field-text__input(type='text' placeholder='Фамилия' name='comment')
+          label.field-text
+            span.field-text__input-wrap
+              textarea.field-text__input(name="test" rows="6" placeholder="Отзыв")
+          p
+            | Нажимая «Зарегистрироваться», вы принимаете условия <a href="#">пользовательского соглашения</a>
+          .field-actions
+            button.btn.btn-block Оставить отзыв
+
+        
+
+block footer
+  +page-footer()
+
+//- block page-bottom
+//-   script(src="js/some.js")

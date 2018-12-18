@@ -1,0 +1,15 @@
+// В этом файле должны быть стили для БЭМ-блока reviews-feedback, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.reviews-feedback {
+
+  $block-name:                &; // #{$block-name}__element
+
+  max-width: 460px;
+
+  &__header {
+  }
+
+  &__form {}
+}

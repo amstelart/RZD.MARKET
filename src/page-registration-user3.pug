@@ -30,31 +30,35 @@ block content
 
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Название компании*', name='comment')
+              input.field-text__input(type='text', placeholder='Форма собственности*', name='comment')
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Юридический адрес', name='comment')
+              input.field-text__input(type='text', placeholder='ИНН', name='comment')
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Физический адрес', name='comment')
+              input.field-text__input(type='text', placeholder='ОГРН', name='comment')
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Контактное лицо*', name='comment')
+              input.field-text__input(type='text', placeholder='КПП*', name='comment')
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='tel', placeholder='Номер телефона', name='comment')
+              input.field-text__input(type='text', placeholder='БИП банка*', name='comment')
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='email', placeholder='Email*', name='comment')
+              input.field-text__input(type='text', placeholder='Кор/счет*', name='comment')
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Пароль*', name='comment')
+              input.field-text__input(type='text', placeholder='Р/счет', name='comment')
           label.field-text
             span.field-text__input-wrap
-              input.field-text__input(type='text', placeholder='Пароль еще раз*', name='comment')
+              input.field-text__input(type='text', placeholder='Наименование банка', name='comment')
           .field-actions
-            button.btn.btn--block Дальше
-              i.fa.fa-chevron-right.ml5
+            button.btn.btn--block Зарегистрироваться
+          .login-section__footer
+            p
+              | Нажимая «Зарегистрироваться», вы принимаете условия
+              br
+              | <a href='#'>пользовательского соглашения</a>
 
 block footer
   +page-footer()

@@ -32,7 +32,9 @@ block content
                 span
                   i.fa.fa-eye(aria-hidden='true')
                   |  150 (9 сегодня)
-            button.btn Задать вопрос
+            .btn-group
+              button.btn Оставить отзыв
+              button.btn Задать вопрос
 
           .shop-card__content
             .shop-card__contacts
@@ -50,6 +52,20 @@ block content
                 | Продам или обменяю чери бонус. Требует небольших вложений,
                 | за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография
                 | из интернета
+          .shop-card__footer
+            .shop-card__stats
+              div.item
+                i.fa.fa-bar-chart
+                span
+                  | Рейтинг: <b>107110</b>
+              div.item
+                i.fa.fa-comment
+                span
+                  | Отзывы:
+                .stats-reviews
+                  a.pos(href="#") +5
+                  a.ne(href="#") 2
+                  a.neg(href="#") -3
   .page__part
     main.page__main-content(role="main")
       .search-box
