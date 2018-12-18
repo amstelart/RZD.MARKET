@@ -219,21 +219,28 @@ $line-height:                 1.5 !default;
         min-width: 100% !important;
       }
     }
+  }
 
-    // #{$block-name}__input-wrap {
-    //   flex-grow: 1;
-    //
-    //   &--sm {
-    //     flex-grow: 0;
-    //     max-width: 100px;
-    //   }
-    // }
+  &--cards {
+    #{$block-name}__input-wrap {
+      border-bottom: 1px solid  #ccc;
+    }
+    #{$block-name}__name,
+    #{$block-name}__name-text {
+      min-width: 100%;
+    }
 
-    // #{$block-name}__help-text {
-    //   align-self: center;
-    //   font-size: 14px;
-    //   color: #7f7b7b;
-    //   margin-left: 10px;
-    // }
+    @media (max-width: $screen-md) {
+      #{$block-name}__name-text {
+        &:before {
+          content: '';
+          top: 35px;
+        }
+
+        &:after {
+          top: 35px;
+        }
+      }
+    }
   }
 }

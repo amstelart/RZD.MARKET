@@ -1,0 +1,66 @@
+// В этом файле должны быть стили для БЭМ-блока b-services, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.b-services {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-xl) {
+    max-width: 850px;
+  }
+
+  background: #fff;
+  padding: 20px 20px;
+  border: 1px solid #a2a2a2;
+  border-radius: 0.35714rem;
+
+  hr {
+    border-color: #ccc;
+  }
+
+  &__card {
+    margin-bottom: 20px;
+    background: #fae8a8;
+    padding: 20px;
+    border-bottom: none;
+
+    .lk-card__controls {
+      border: none;
+    }
+
+    &.new {
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 62px;
+        height: 61px;
+        background-image: url('../img/new-flag.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -3px;
+        left: 40px;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 60px;
+    .btn-group {
+      .btn {
+        margin-bottom: 8px;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &__cost {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+}

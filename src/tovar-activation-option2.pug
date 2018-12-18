@@ -1,0 +1,87 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block header
+  +page-header()
+
+block content
+      
+  .page__part.gray
+    main.page__main-content(role="main")
+      .b-services
+        .lk-card.b-services__card.new
+          .lk-card__image
+            img.thumb(src="img/joker.jpg" alt="Джокер")
+          .lk-card__body
+            h2.lk-card__title Суфле веждувагонных соединений
+            .lk-card__cost
+              | 152 555 
+              i.fa.fa-rub(aria-hidden="true")
+            .progress.progress--lk-card
+              .progress__bar-wrap
+                .progress__bar(role="progressbar" style="width: 50%;height: 10px;" aria-valuenow="50")
+              .progress__info Объявление завершится через 2 месяца 3 дня
+            .lk-card__meta
+              span № 152698
+              span 25.01.2018
+              span
+                i.fa.fa-eye(aria-hidden="true")
+                |  150 (9 сегодня)
+
+        hr.hr
+        .b-services__header
+          h3 Выберите услуги
+        .b-services__body
+
+          form
+            .field-radio.field-radio--cards
+              .field-radio__input-wrap
+                label.field-radio__name
+                  input.field-radio__input(type='radio', name='radio', checked='checked')
+                  span.field-radio__name-text
+                    .b-services-card
+                      .b-services-card__icon.tar-01
+                      .b-services-card__caption Поднятие одного объявления на 5 дней
+                      .b-services-card__cost
+                        .prev-image
+                          img(src="img/prev-image-01.png")
+                        span 199 руб.
+              .field-radio__input-wrap
+                label.field-radio__name
+                  input.field-radio__input(type='radio', name='radio', checked='checked')
+                  span.field-radio__name-text
+                    .b-services-card
+                      .b-services-card__icon.tar-02
+                      .b-services-card__caption Поднятие одного объявления на 10 дней +добавление эффектного графического выделения объявления
+                      .b-services-card__cost
+                        .prev-image
+                          img(src="img/prev-image-02.png")
+                        span 399 руб.
+              .field-radio__input-wrap
+                label.field-radio__name
+                  input.field-radio__input(type='radio', name='radio', checked='checked')
+                  span.field-radio__name-text
+                    .b-services-card
+                      .b-services-card__icon.tar-03
+                      .b-services-card__caption Поднятие одного объявления на 20 дней +добавление эффектного графического выделения объявления
+                      .b-services-card__cost
+                        .prev-image
+                          img(src="img/prev-image-03.png")
+                        span 699 руб.
+        .b-services__footer
+          .b-services__cost Итого: 199 руб.
+          .btn-group
+            button.btn Оплатить
+            button.btn Продолжить без подключения услуг
+
+block footer
+  +page-footer()
+
+//- block page-bottom
+//-   script(src="js/some.js")

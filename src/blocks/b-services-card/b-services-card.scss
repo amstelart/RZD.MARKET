@@ -1,0 +1,64 @@
+// В этом файле должны быть стили для БЭМ-блока b-services-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.b-services-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  padding: 15px 0;
+  
+  @media (max-width: $screen-md) {
+    flex-wrap: wrap;
+  }
+
+  &__icon {
+    min-width: 60px;
+    min-height: 60px;
+    flex-basis: 60px;
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+
+    @media (max-width: $screen-md) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &.tar-01 {
+      background-image: url('../img/services-icon-01.png');
+    }
+    &.tar-02 {
+      background-image: url('../img/services-icon-02.png');
+    }
+    &.tar-03 {
+      background-image: url('../img/services-icon-03.png');
+    }
+  }
+  &__caption {
+    flex-grow: 1;
+    align-self: center;
+    padding: 15px;
+  }
+  &__cost {
+    display: flex;
+    align-self: flex-start;
+
+    @media (max-width: $screen-md) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    .prev-image {
+      min-width: 153px;
+    }
+
+    span {
+      align-self: center;
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+      padding: 20px 0 20px 20px;
+    }
+  }
+}

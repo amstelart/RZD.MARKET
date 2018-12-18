@@ -101,7 +101,9 @@
     "page-box": [],
     "add-advert": [],
     "b-reviews": [],
-    "reviews-feedback": []
+    "reviews-feedback": [],
+    "b-services": [],
+    "b-services-card": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
