@@ -65,7 +65,7 @@
               <div class="login"><a class="login__sign-in" href="page-login.html">Вход</a><a class="login__reg" href="page-registration-user.html">Регистрация</a></div>
             </div>
           </div>
-          <div class="page-header__btn"><a class="btn" href="page-tovar-add.html">Добавить объявление</a><a class="btn" href="page-tovar-add.html">Добавить магазин</a></div>
+          <div class="page-header__btn"><a class="btn" href="page-tovar-add.html">Добавить объявление</a></div>
         </div>
       </header>
       <div class="page__part gray">
@@ -74,12 +74,7 @@
             <div class="add-advert">
               <div class="add-advert__part">
                 <h2 class="add-advert__title">Добавить объявление</h2>
-                <form class="form add-advert__form">
-                  <div class="field-radio field-radio--inline field-radio--buttons">
-                    <div class="field-radio__title" style="min-width:200px;">Добавить объявление как:</div>
-                    <div class="field-radio__input-wrap"><label class="field-radio__name"><input class="field-radio__input" type="radio" name="radio" checked="checked"><span class="field-radio__name-text">Частное лицо</span></label></div>
-                    <div class="field-radio__input-wrap"><label class="field-radio__name"><input class="field-radio__input" type="radio" name="radio"><span class="field-radio__name-text">Магазин</span></label></div>
-                  </div><label class="field-text field-text--inline"><span class="field-text__name">Выберите категорию:</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Категория"></span></label><label class="field-text field-text--inline"><span class="field-text__name">Местоположение:</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Ж/Д полигон"></span></label>
+                <form class="form add-advert__form"><label class="field-text field-text--inline"><span class="field-text__name">Выберите категорию:</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Категория"></span></label><label class="field-text field-text--inline"><span class="field-text__name">Местоположение:</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Ж/Д полигон"></span></label>
                   <div class="field-actions field-actions--inline">
                     <div class="field-actions__text"></div>
                     <p><button class="btn">Сохранить</button></p>
@@ -90,8 +85,8 @@
               <div class="add-advert__part">
                 <form class="form add-advert__form"><label class="field-text field-text--inline"><span class="field-text__name">Описание товара:</span><span class="field-text__input-wrap"><textarea class="field-text__input" name="comment" placeholder="Введите текст"></textarea></span></label><label class="field-text field-text--inline"><span class="field-text__name">Комментарий продавца:</span><span class="field-text__input-wrap"><textarea class="field-text__input" name="comment" placeholder="Введите текст"></textarea></span></label><label class="field-text field-text--inline"><span class="field-text__name">Цена:</span><span class="field-text__input-wrap field-text__input-wrap--sm"><input class="field-text__input" type="text" value="5700"></span><span class="field-text__help-text">руб</span></label>
                   <div class="field-file field-file--inline">
-                    <div class="field-file__name">Название</div><label class="field-file__input-wrap"><input class="field-file__input" type="file" data-multiple-caption="Выбрано файлов: {count}" name="commentFile" multiple="multiple"><div class="field-file__name-text" data-button-text="+">Ничего не выбрано</div></label></div>
-                  <div class="field-radio field-radio--inline field-radio--buttons">
+                    <div class="field-file__name">Фотографии</div><label class="field-file__input-wrap"><input class="field-file__input" type="file" data-multiple-caption="Выбрано файлов: {count}" name="commentFile" multiple="multiple"><div class="field-file__name-text" data-button-text="+">Ничего не выбрано</div></label></div>
+                  <div class="field-radio field-radio--inline">
                     <div class="field-radio__title">Тип товара:</div>
                     <div class="field-radio__input-wrap"><label class="field-radio__name"><input class="field-radio__input" type="radio" name="radio" checked="checked"><span class="field-radio__name-text">Новый</span></label></div>
                     <div class="field-radio__input-wrap"><label class="field-radio__name"><input class="field-radio__input" type="radio" name="radio"><span class="field-radio__name-text">Б/У</span></label></div>
@@ -113,21 +108,7 @@
                 </form>
               </div>
               <hr class="page-box__hr">
-              <div class="add-advert__part">
-                <h2 class="add-advert__title">Выберите услуги</h2>
-                <form class="form add-advert__form">
-                  <div class="field-radio field-radio--buttons field-radio--buttons-xl">
-                    <div class="field-radio__input-wrap"><label class="field-radio__name"><input class="field-radio__input" type="radio" name="radio" checked="checked"><span class="field-radio__name-text">Услуга №1</span></label></div>
-                    <div class="field-radio__input-wrap"><label class="field-radio__name"><input class="field-radio__input" type="radio" name="radio"><span class="field-radio__name-text">Услуга №2</span></label></div>
-                    <div class="field-radio__input-wrap"><label class="field-radio__name"><input class="field-radio__input" type="radio" name="radio"><span class="field-radio__name-text">Услуга №3</span></label></div>
-                  </div>
-                  <div class="add-advert__description">Описание услуги</div>
-                </form>
-              </div>
-              <div class="add-advert__part add-advert__part--action">
-                <div class="add-advert__cost">Цена: 530 руб.</div>
-                <div class="add-advert__btn-group"><button class="btn">Подать объявление</button><button class="btn">Выписать счет</button></div>
-              </div>
+              <div class="add-advert__part add-advert__part--action"><button class="btn">Подать объявление</button></div>
             </div>
           </div>
         </main>
