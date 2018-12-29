@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Главная</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if (isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if (typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--' + key;
+            if (typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if (isMobile[key][type]) rootClasses += ' is-mobile--' + key + '-' + type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      } else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <div class="page-header__banner"><a href="#"><img src="img/top-banner.jpg"/></a></div>
+          <div class="page-header__box"><a class="logo" href="/"><img src="img/logo.png"/></a><button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
+            <nav class="main-nav" id="nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="page-header__right">
+              <form class="search-form page-header__search"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="search" placeholder="Поле поиска"/><button class="btn field-text__btn"><i class="fa fa-search"></i></button></span></label></form>
+              <div class="login"><a class="login__sign-in" href="page-login.html">Вход</a><a class="login__reg" href="page-registration-user.html">Регистрация</a></div>
+            </div>
+          </div>
+          <div class="page-header__btn"><a class="btn" href="page-tovar-add.html">Добавить объявление</a></div>
+        </div>
+      </header>
+      <main class="page__main-content" role="main">
+        <ul style="list-style: none;padding:0;">
+          <li><a href="index.html" target="_blank">Главная</a></li>
+          <li><a href="page-catalog.html" target="_blank">page-catalog</a></li>
+          <li><a href="page-lk--ads.html" target="_blank">page-lk--ads</a></li>
+          <li><a href="page-lk--messeges.html" target="_blank">page-lk--messeges</a></li>
+          <li><a href="page-lk--settings.html" target="_blank">page-lk--settings</a></li>
+          <li><a href="page-login.html" target="_blank">page-login</a></li>
+          <li><a href="page-product.html" target="_blank">page-product</a></li>
+          <li><a href="page-registration-shop.html" target="_blank">page-registration-shop</a></li>
+          <li><a href="page-registration-user.html" target="_blank">page-registration-user</a></li>
+          <li><a href="page-registration-user2.html" target="_blank">page-registration-user2</a></li>
+          <li><a href="page-registration-user3.html" target="_blank">page-registration-user3</a></li>
+          <li><a href="page-result-search.html" target="_blank">page-result-search</a></li>
+          <li><a href="page-reviews.html" target="_blank">page-reviews</a></li>
+          <li><a href="page-services.html" target="_blank">page-services</a></li>
+          <li><a href="page-shop.html" target="_blank">page-shop</a></li>
+          <li><a href="page-shops.html" target="_blank">page-shops</a></li>
+          <li><a href="page-tovar-add.html" target="_blank">page-tovar-add</a></li>
+          <li><a href="tovar-activation-option2.html" target="_blank">tovar-activation-option2</a></li>
+          <li><a href="tovar-activation-option3.html" target="_blank">tovar-activation-option3</a></li>
+        </ul>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__box"><a class="logo" href="/"><img src="img/logo.png"/></a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="page-footer__btn"><button class="btn">Добавить объявление</button><button class="btn">Добавить магазин</button></div>
+          </div>
+          <div class="page-footer__copyright">
+            <p>Разработка сайта - <a href="http://www.2showbiz.ru">Showbiz Studio</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
